@@ -5,3 +5,38 @@
 .custom_font_color_1 {
     color: #48BFE3;
 }
+
+.head {
+    position: fixed;
+}
+
+/* Scrollbar styling for Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1D1D1D; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1D1D1D; /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    border: 3px solid #1D1D1D; /* Adjusting the width of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #48BFE3; /* Color of the scrollbar thumb on hover */
+}
+
+/* Scrollbar styling for Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #48BFE3 #1D1D1D;
+}
+
+/* Additional styling */
+.con {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    z-index: 20;
+}
