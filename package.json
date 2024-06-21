@@ -12,6 +12,7 @@
   "dependencies": {
     "@eslint/config-array": "^0.16.0",
     "@eslint/object-schema": "^2.1.4",
+    "@fontsource/montserrat": "^5.0.18",
     "glob": "^9.3.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

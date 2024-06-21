@@ -4,9 +4,9 @@ import './App.css'
 function App() {
 
   return (
-    <section>
+    <div>
       <h1 className='font-mono text-2xl'>Hello world</h1>
-    </section>
+    </div>
   )
 }
 
