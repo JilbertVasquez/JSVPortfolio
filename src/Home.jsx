@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typewriter, Cursor } from 'react-simple-typewriter';
 import './custom.css';
+import Navigate from './Navigation';
 
 function Home () {
 
@@ -10,6 +11,10 @@ function Home () {
     //     deleteSpeed: 50,
     //     typeSpeed: 100,
     // });
+
+    const scrollTo = (id, e) => {
+        Navigate(id, e); // Replace 'aboutMeSection' with the actual ID of your section in aboutme.jsx
+    };
 
     const smoothScroll = (event) => {
         event.preventDefault();
@@ -25,18 +30,18 @@ function Home () {
         <section className="con custom_bg_1 container 3xl h-screen" id="Home">
             <nav className='head custom_bg_1 w-full h-14  columns-8 flex justify-around items-center px-20 z-10'>
                 <div className='h-10 w-36 p-3 custom_bg_1 flex justify-center items-center'>
-                    <a href="#Home" className='custom_font_color_1 text-2xl uppercase font-black hover:border-b-2 text-white' onClick={smoothScroll}>JV</a>
+                    <a href="#Home" className='custom_font_color_1 text-2xl uppercase font-black hover:border-b-2 text-white' onClick={(e) => {scrollTo('Home', e);}}>JV</a>
                 </div>
                 <div className='h-10 w-10 p-2 custom_bg_1 flex justify-center items-center'>
                     
                 </div>
 
                 <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
-                    <a href="#Home" className='text-xl text-white uppercase hover:border-b-2 border-sky-500' onClick={smoothScroll}>About Me</a>
+                    <a href="#AboutMe" className='text-xl text-white uppercase hover:border-b-2 border-sky-500' onClick={(e) => {scrollTo('AboutMe', e);}}>About Me</a>
                 </div>
 
                 <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
-                    <a href="#Home" className='custom_font_color_1 text-xl uppercase font-semibold hover:border-b-2 text-white' onClick={smoothScroll}>Experience</a>
+                    <a href="#" className='custom_font_color_1 text-xl uppercase font-semibold hover:border-b-2 text-white' onClick={smoothScroll}>Experience</a>
                 </div>
 
                 <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
@@ -61,9 +66,9 @@ function Home () {
                 </div>
                 <div className=' h-screen w-3/5 flex justify-start items-center px-20'>
                     <div className=' h-2/5 w-full custom_bg_1 flex flex-col justify-start items-start px-8'>
-                        <h1 className='text-white uppercase font-medium text-4xl pt-5 pb-1'>Hi, I am</h1>
-                        <h1 className='text-white uppercase font-medium text-5xl pt-1 pb-2'>Jilbert S. Vasquez</h1>
-                        <h1 className='custom_font_color_1 uppercase font-semibold tracking-wider text-4xl pt-2 pb-5'> 
+                        <h1 className='custom_font_color_1 capitalize font-medium text-3xl pt-5 pb-1'>Hello World, I'm</h1>
+                        <h1 className='text-white capitalize font-medium text-5xl pt-1 pb-2'>Jilbert S. Vasquez</h1>
+                        <h1 className='custom_font_color_1 capitalize font-semibold tracking-wider text-3xl pt-2 pb-1'> 
                             <Typewriter 
                                 loop={true}
                                 words={['Computer Engineer', 'Web Developer', "Future Software Engineer"]}
@@ -71,6 +76,7 @@ function Home () {
                                 delaySpeed={1500}
                             /><Cursor />
                         </h1>
+                        <h1 className='text-white font-medium text-xl pt-1 pb-2'> &lt; Welcome-to-my-personal-website /&gt; </h1>
                     </div>
                 </div>
             </section>
