@@ -2,7 +2,17 @@ import React from 'react';
 
 import './custom.css';
 
-
+const projectDetails = [
+    {
+        image:          'JV.png',
+        title:          'Personal Website',
+        description:    `This personal website is designed to compile and highlight my skills, experience, projects, 
+                        certificates, and social media platform accounts. It uses modern web development technologies to ensure a 
+                        responsive and appealing interface. It allows me to connect with like-minded professionals and potential collaborators.`,
+        languages: ['html', 'css', 'javascript', 'React', 'Tailwind'],
+        link: '',
+    },
+];
 
 function Projects () {
 
@@ -30,13 +40,13 @@ const EventCard = (image, title, description, languages, link) => {
     return (
         <div className='w-full h-full rounded bg-red-500 p-4 px-6'>
             <div className='w-full h-2/6'>
-                <img className='w-full h-full' src="JV.png" alt="tumbnail" />
+                <img className='w-full h-full' src={image} alt="tumbnail" />
             </div>
             <div className='w-full bg-indigo-500'>
-                <h1 className='custom_font_color_1 tracking-wide text-start px-4 pt-2 flex justify-center text-lg capitalize font-medium' >Personal Portfolio Personal</h1>
+                <h1 className='custom_font_color_1 tracking-wide text-start px-4 pt-2 flex justify-center text-lg capitalize font-medium' >{title}</h1>
             </div>
             <div className='w-full h-2/6 bg-indigo-200'>
-                <p className='custom_font_color_1 px-2 pt-2 text-base indent-6 text-justify capitalize' >Personal Portfolio Personal Portfolio Personal Portfolio</p>
+                <p className='custom_font_color_1 px-2 pt-2 text-base indent-6 text-justify capitalize' >{description}</p>
             </div>
             <div className='w-full  bg-indigo-500 grid grid-cols-4 gap-x-2 px-2 gap-y-1 justify-center'>
                 <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >html</h4>
