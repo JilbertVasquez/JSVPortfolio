@@ -42,11 +42,11 @@ function Home () {
                     </div>
 
                     <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
-                        <a href="#" className='custom_font_color_1 text-xl uppercase font-semibold hover:border-b-2 text-white' onClick={smoothScroll}>Experience</a>
+                        <a href="#" className='custom_font_color_1 text-xl uppercase font-semibold hover:border-b-2 text-white' onClick={(e) => {scrollTo('Experience', e);}}>Experience</a>
                     </div>
 
                     <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
-                        <a href="#Home" className=' text-xl uppercase text-white  hover:border-b-2 border-sky-500' onClick={smoothScroll}>Projects</a>
+                        <a href="#Home" className=' text-xl uppercase text-white  hover:border-b-2 border-sky-500' onClick={(e) => {scrollTo('Projects', e);}}>Projects</a>
                     </div>
 
                     <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>

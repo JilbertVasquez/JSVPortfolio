@@ -3,6 +3,7 @@ import React from 'react';
 import Home from './Home.jsx'
 import AboutMe from './AboutMe.jsx'
 import Experience from './Experience.jsx'
+import Projects from './Projects.jsx'
 
 function Container () {
 
@@ -12,6 +13,7 @@ function Container () {
             <Home />
             <AboutMe />
             <Experience />
+            <Projects />
         </div>
     )
 }
