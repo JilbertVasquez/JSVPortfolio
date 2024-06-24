@@ -10,7 +10,7 @@ const projectDetails = [
                         certificates, and social media platform accounts. It uses modern web development technologies to ensure a 
                         responsive and appealing interface. It allows me to connect with like-minded professionals and potential collaborators.`,
         languages:      ['html', 'css', 'javascript', 'React', 'Tailwind'],
-        link:           '',
+        link:           '#Home',
     },
     {
         image:          'src/assets/DFSLogin.png',
@@ -27,7 +27,7 @@ const projectDetails = [
         link:           '',
     },
     {
-        image:          '',
+        image:          'src/assets/Vault.png',
         title:          'Personal Vault System',
         description:    'Developed an account manager in NetBeans Java, providing a secure platform for users to manage and store their accounts and passwords with MySQL integration.',
         languages:      ['Java', 'Netbeans', 'Mysql'],
@@ -40,7 +40,8 @@ const projectDetails = [
                         Batangas through its beautiful museums. This website highlights the stunning architecture and fascinating exhibits 
                         of each museum, providing a visual and informational delight for visitors.`,
         languages:      ['html', 'css', 'javascript'],
-        link:           'https://museumrevive.github.io/MuseumRevive/',
+        // link:           'https://museumrevive.github.io/MuseumRevive/',
+        link:           'https://jilbertvasquez.github.io/MuseumRevive/',
     },
     {
         image:          'src/assets/CelestialHotel.png',
@@ -48,7 +49,7 @@ const projectDetails = [
         description:    `A website that showcases many options for guest rooms, suites, and other luxurious hotel features. 
                         Not excluded were the boutique, contact details, and reservation options. `,
         languages:      ['html', 'css'],
-        link:           '',
+        link:           'https://jilbertvasquez.github.io/Company/',
     },
     
     // {
@@ -59,6 +60,48 @@ const projectDetails = [
     //     link:           '',
     // },
 ];
+
+const backgroundColorBasedOnLanguage= (language) => {
+    switch (language.toLowerCase()) {
+        case 'html':
+            return '#e34c26';
+            return 'linear-gradient(135deg, #e34c26, #ebebeb)';
+        case 'css':
+            return '#264de4';
+            return 'linear-gradient(135deg, #264de4, #ebebeb)';
+        case 'javascript':
+            return '#cfab00';
+            return '#f1d302';
+            return '#f0db4f';
+            return 'linear-gradient(135deg, #f0db4f, #323330)';
+        case 'react':
+            return '#0970D2 ';
+            return '#61DBFB';
+        case 'php':
+            return '#484C89';
+            return 'linear-gradient(135deg, #484C89, #AEB2D5)';
+        case 'bootstrap':
+            return '#563d7c';
+            return 'linear-gradient(135deg, #563d7c, #ffffff)';
+        case 'django':
+            return '#092e20';
+        case 'tailwind':
+            return '#06b6d4';
+            return 'linear-gradient(135deg, #4c1d95, #a5f3fc)';
+        case 'mysql':
+            return '#06b6d4'
+            return 'linear-gradient(135deg, #06b6d4, #f29111)';
+        case 'java':
+            return '#cc0000';
+        case 'netbeans':
+            return '#5FB233';
+        case 'python':
+            return '#4584b6';
+        default:
+            return '#6B7280';
+    }
+}
+
 
 function Projects () {
 
@@ -88,6 +131,9 @@ function Projects () {
 }
 
 const EventCard = ({image, title, description, languages, link}) => {
+    const navigateToLink = (link) => {
+        window.open(link, '_blank');
+    };
     return (
         <div className='event_shadow w-full h-full rounded-xl border-2 border-sky-500  p-4 px-6 hover:bg-gray-950'>
             <div className='w-full h-2/6'>
@@ -107,12 +153,12 @@ const EventCard = ({image, title, description, languages, link}) => {
                 <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >Tailwind</h4> */}
 
                 {languages.map((pl, index) => (
-                    <h4 key={index} className='text-black w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-white' >{pl}</h4>
+                    <h4 key={index} className='text-white w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase' style={{ backgroundColor: backgroundColorBasedOnLanguage(pl) }} >{pl}</h4>
                 ))}
 
             </div>
             <div className='w-full mt-5 '>
-                <button className='rounded-full px-3 p-2 bg-black text-white'>Learn More</button>
+                <button className='rounded-full px-3 p-2 bg-black text-white' onClick={() => navigateToLink(link)}>Learn More</button>
             </div>
             
         </div>
