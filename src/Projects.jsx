@@ -36,7 +36,7 @@ function Projects () {
     )
 }
 
-const EventCard = (image, title, description, languages, link) => {
+const EventCard = ({image="JV.png", title="ASD", description="ASDA", languages, link}) => {
     return (
         <div className='w-full h-full rounded bg-red-500 p-4 px-6'>
             <div className='w-full h-2/6'>
