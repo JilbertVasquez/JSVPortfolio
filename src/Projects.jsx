@@ -4,13 +4,58 @@ import './custom.css';
 
 const projectDetails = [
     {
-        image:          'JV.png',
+        image:          'src/assets/Portfolio.png',
         title:          'Personal Website',
         description:    `This personal website is designed to compile and highlight my skills, experience, projects, 
                         certificates, and social media platform accounts. It uses modern web development technologies to ensure a 
                         responsive and appealing interface. It allows me to connect with like-minded professionals and potential collaborators.`,
-        languages: ['html', 'css', 'javascript', 'React', 'Tailwind'],
-        link: '',
+        languages:      ['html', 'css', 'javascript', 'React', 'Tailwind'],
+        link:           '',
+    },
+    {
+        image:          'src/assets/DFSLogin.png',
+        title:          'BatStateU - Alangilan Drive with Distributed File System',
+        description:    'Developed a secure and user-friendly Django web application for data management, utilizing a Distributed File system for redundancy and security.',
+        languages:      ['html', 'css', 'javascript', 'python', 'Django', 'Mysql'],
+        link:           '',
+    },
+    {
+        image:          'src/assets/BatStateUCampusMap.png',
+        title:          'BatStateU - Alangilan Campus Site Map',
+        description:    'Developed an interactive React web application for navigation, allowing users to find buildings, specific rooms, and get directions with ease.',
+        languages:      ['html', 'css', 'javascript', 'React'],
+        link:           '',
+    },
+    {
+        image:          '',
+        title:          'Personal Vault System',
+        description:    'Developed an account manager in NetBeans Java, providing a secure platform for users to manage and store their accounts and passwords with MySQL integration.',
+        languages:      ['Java', 'Netbeans', 'Mysql'],
+        link:           '',
+    },
+    {
+        image:          'src/assets/CelestialHotel.png',
+        title:          'Celestial Hotel',
+        description:    `A website that showcases many options for guest rooms, suites, and other luxurious hotel features. 
+                        Not excluded were the boutique, contact details, and reservation options. `,
+        languages:      ['html', 'css'],
+        link:           '',
+    },
+    {
+        image:          'src/assets/MuseumRevive.png',
+        title:          'Museum Revive',
+        description:    `Develop a Batangas Museums website to guide you in exploring the rich history and culture of 
+                        Batangas through its beautiful museums. This website highlights the stunning architecture and fascinating exhibits 
+                        of each museum, providing a visual and informational delight for visitors.`,
+        languages:      ['html', 'css', 'javascript'],
+        link:           'https://museumrevive.github.io/MuseumRevive/',
+    },
+    {
+        image:          '',
+        title:          '',
+        description:    '',
+        languages:      '',
+        link:           '',
     },
 ];
 
