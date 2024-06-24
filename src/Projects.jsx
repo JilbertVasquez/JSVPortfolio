@@ -34,14 +34,6 @@ const projectDetails = [
         link:           '',
     },
     {
-        image:          'src/assets/CelestialHotel.png',
-        title:          'Celestial Hotel',
-        description:    `A website that showcases many options for guest rooms, suites, and other luxurious hotel features. 
-                        Not excluded were the boutique, contact details, and reservation options. `,
-        languages:      ['html', 'css'],
-        link:           '',
-    },
-    {
         image:          'src/assets/MuseumRevive.png',
         title:          'Museum Revive',
         description:    `Develop a Batangas Museums website to guide you in exploring the rich history and culture of 
@@ -51,12 +43,21 @@ const projectDetails = [
         link:           'https://museumrevive.github.io/MuseumRevive/',
     },
     {
-        image:          '',
-        title:          '',
-        description:    '',
-        languages:      '',
+        image:          'src/assets/CelestialHotel.png',
+        title:          'Celestial Hotel',
+        description:    `A website that showcases many options for guest rooms, suites, and other luxurious hotel features. 
+                        Not excluded were the boutique, contact details, and reservation options. `,
+        languages:      ['html', 'css'],
         link:           '',
     },
+    
+    // {
+    //     image:          '',
+    //     title:          '',
+    //     description:    '',
+    //     languages:      '',
+    //     link:           '',
+    // },
 ];
 
 function Projects () {
@@ -68,39 +69,49 @@ function Projects () {
                     <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-5 pb-2 text-3xl uppercase font-semibold' >Projects</h1>
                     <h3 className='text-white tracking-wider text-start px-5 pb-2 text-lg capitlize font-normal'>Here are some of the projects I've worked on recently.</h3>
                 </div>
-                <div className='bg-indigo-500 grid grid-cols-3 gap-x-14 gap-y-20 px-14 p-6 mt-10'>
+                <div className=' grid grid-cols-3 gap-x-14 gap-y-20 px-14 p-6 mt-10'>
+                    {/* <EventCard />
                     <EventCard />
                     <EventCard />
                     <EventCard />
                     <EventCard />
-                    <EventCard />
-                    <EventCard />
+                    <EventCard /> */}
+
+                    {projectDetails.map((project, index) => (
+                        <EventCard key={index}  image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
+                    ))}
+
                 </div>
             </section>
         </section>
     )
 }
 
-const EventCard = ({image="JV.png", title="ASD", description="ASDA", languages, link}) => {
+const EventCard = ({image, title, description, languages, link}) => {
     return (
-        <div className='w-full h-full rounded bg-red-500 p-4 px-6'>
+        <div className='event_shadow w-full h-full rounded-xl border-2 border-sky-500  p-4 px-6 hover:bg-gray-950'>
             <div className='w-full h-2/6'>
-                <img className='w-full h-full' src={image} alt="tumbnail" />
+                <img className='w-full h-full rounded' src={image} alt="tumbnail" />
             </div>
-            <div className='w-full bg-indigo-500'>
+            <div className='w-full '>
                 <h1 className='custom_font_color_1 tracking-wide text-start px-4 pt-2 flex justify-center text-lg capitalize font-medium' >{title}</h1>
             </div>
-            <div className='w-full h-2/6 bg-indigo-200'>
-                <p className='custom_font_color_1 px-2 pt-2 text-base indent-6 text-justify capitalize' >{description}</p>
+            <div className='w-full '>
+                <p className='text-white px-2 pt-2 pb-2 text-base indent-6 text-justify capitalize' >{description}</p>
             </div>
-            <div className='w-full  bg-indigo-500 grid grid-cols-4 gap-x-2 px-2 gap-y-1 justify-center'>
-                <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >html</h4>
+            <div className='w-full   grid grid-cols-4 gap-x-2 px-2 gap-y-1 justify-center'>
+                {/* <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >html</h4>
                 <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >css</h4>
                 <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >Javascript</h4>
                 <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >React</h4>
-                <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >Tailwind</h4>
+                <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >Tailwind</h4> */}
+
+                {languages.map((pl, index) => (
+                    <h4 key={index} className='text-black w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-white' >{pl}</h4>
+                ))}
+
             </div>
-            <div className='w-full mt-2 bg-indigo-300'>
+            <div className='w-full mt-5 '>
                 <button className='rounded-full px-3 p-2 bg-black text-white'>Learn More</button>
             </div>
             
