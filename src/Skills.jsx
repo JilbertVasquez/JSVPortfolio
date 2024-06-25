@@ -88,8 +88,8 @@ const EventCardContainer = ({skillset}) => {
                 ))} */}
             </div>
             <div className='p-8 w-full px-26 pb-10 flex flex-wrap gap-10 justify-center items-center'>
-                {skillset.languages.map((skills, key) => (
-                    <EventCard name={skills.name} image={skills.image} />
+                {skillset.languages.map((skills, index) => (
+                    <EventCard key={index} name={skills.name} image={skills.image} />
                 ))}
             </div>
         </div>
