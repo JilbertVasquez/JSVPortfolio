@@ -34,7 +34,7 @@ function Contact () {
                     </div>
                 </div>
             </section>
-            <div className='w-full h-2/6 custom_bg_3 flex items-end '>
+            <div className='w-full h-2/6 bg-sky-800  flex items-end '>
                 <div className='w-full h-1/3 bg-white flex justify-center items-center mb-10'>
                     <SocialMedia />
                 </div>
