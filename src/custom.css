@@ -68,5 +68,9 @@
     box-shadow: inset 0px 0px 10px 4px #48BFE3;
 }
 
+.skill_shadow:hover {
+    background-color: #0D1B2A;
+}
+
 /* ----------------------------------------ABOUTME----------------------------------------- */
 
