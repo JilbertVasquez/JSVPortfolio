@@ -140,7 +140,7 @@ const EventCard = ({image, title, description, languages, link}) => {
                 <img className='w-full h-full rounded' src={image} alt="tumbnail" />
             </div>
             <div className='w-full '>
-                <h1 className='custom_font_color_1 tracking-wide text-start px-4 pt-2 flex justify-center text-lg capitalize font-medium' >{title}</h1>
+                <h1 className='custom_font_color_1 tracking-wide px-4 pt-2 flex justify-center text-center text-lg capitalize font-medium' >{title}</h1>
             </div>
             <div className='w-full '>
                 <p className='text-white px-2 pt-2 pb-2 text-base indent-6 text-justify ' >{description}</p>

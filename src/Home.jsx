@@ -58,7 +58,7 @@ function Home () {
                     </div>
 
                     <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
-                        <a href="#Home" className='custom_font_color_1 text-xl uppercase font-semibold hover:border-b-2 text-white' onClick={smoothScroll}>Contact</a>
+                        <a href="#Home" className='custom_font_color_1 text-xl uppercase font-semibold hover:border-b-2 text-white' onClick={(e) => {scrollTo('Contact', e);}}>Contact</a>
                     </div>
                 </nav>
             </div>

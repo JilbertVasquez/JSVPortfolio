@@ -5,6 +5,7 @@ import AboutMe from './AboutMe.jsx'
 import Experience from './Experience.jsx'
 import Projects from './Projects.jsx'
 import Skills from './Skills.jsx'
+import Contact from './Contact.jsx'
 
 function Container () {
 
@@ -16,7 +17,7 @@ function Container () {
             <Experience />
             <Projects />
             <Skills />
-            <AboutMe />
+            <Contact />
         </div>
     )
 }
