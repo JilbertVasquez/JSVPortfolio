@@ -17,7 +17,7 @@ const projectDetails = [
         title:          'BatStateU - Alangilan Drive with Distributed File System',
         description:    'Developed a secure and user-friendly Django web application for data management, utilizing a Distributed File system for redundancy and security.',
         languages:      ['html', 'css', 'javascript', 'python', 'Django', 'Mysql'],
-        link:           '',
+        link:           'https://jilbertvasquez.github.io/DFSUserManual/',
     },
     {
         image:          'src/assets/BatStateUCampusMap.png',
