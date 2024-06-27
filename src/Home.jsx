@@ -2,6 +2,7 @@ import React from 'react';
 import { Typewriter, Cursor } from 'react-simple-typewriter';
 import './custom.css';
 import Navigate from './Navigation';
+import jil1 from './assets/jil1.jpg';
 
 function Home () {
 
@@ -64,7 +65,7 @@ function Home () {
             </div>
             <section className=' h-screen w-4/5 flex justify-center items-center mx-auto'>
                 <div className=' h-screen w-2/5 flex justify-center items-center'>
-                    <img className='my-pic rounded-full w-4/5 border-2 border-sky-500 ' src="src/assets/jil1.jpg" alt="jil-pic" />
+                    <img className='my-pic rounded-full w-4/5 border-2 border-sky-500 ' src={jil1} alt="jil-pic" />
                 </div>
                 <div className=' h-screen w-3/5 flex justify-start items-center px-20'>
                     <div className=' h-2/5 w-full custom_bg_1 flex flex-col justify-start items-start px-8'>

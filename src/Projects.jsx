@@ -1,10 +1,17 @@
 import React from 'react';
+import Portfolio from './assets/Portfolio.png';
+import DFSLogin from './assets/DFSLogin.png';
+import BatStateUCampusMap from './assets/BatStateUCampusMap.png';
+import Vault from './assets/Vault.png';
+import MuseumRevive from './assets/MuseumRevive.png';
+import CelestialHotel from './assets/CelestialHotel.png';
+
 
 import './custom.css';
 
 const projectDetails = [
     {
-        image:          'src/assets/Portfolio.png',
+        image:          Portfolio,
         title:          'Personal Website',
         description:    `This personal website is designed to compile and highlight my skills, experience, projects, 
                         certificates, and social media platform accounts. It uses modern web development technologies to ensure a 
@@ -13,28 +20,28 @@ const projectDetails = [
         link:           '#Home',
     },
     {
-        image:          'src/assets/DFSLogin.png',
+        image:          DFSLogin,
         title:          'BatStateU - Alangilan Drive with Distributed File System',
         description:    'Developed a secure and user-friendly Django web application for data management, utilizing a Distributed File system for redundancy and security.',
         languages:      ['html', 'css', 'javascript', 'python', 'Django', 'Mysql'],
         link:           'https://jilbertvasquez.github.io/DFSUserManual/',
     },
     {
-        image:          'src/assets/BatStateUCampusMap.png',
+        image:          BatStateUCampusMap,
         title:          'BatStateU - Alangilan Campus Site Map',
         description:    'Developed an interactive React web application for navigation, allowing users to find buildings, specific rooms, and get directions with ease.',
         languages:      ['html', 'css', 'javascript', 'React'],
         link:           '',
     },
     {
-        image:          'src/assets/Vault.png',
+        image:          Vault,
         title:          'Personal Vault System',
         description:    'Developed an account manager in NetBeans Java, providing a secure platform for users to manage and store their accounts and passwords with MySQL integration.',
         languages:      ['Java', 'Netbeans', 'Mysql'],
-        link:           '',
+        link:           'https://jilbertvasquez.github.io/PersonalVaultUserManual/',
     },
     {
-        image:          'src/assets/MuseumRevive.png',
+        image:          MuseumRevive,
         title:          'Museum Revive',
         description:    `Develop a Batangas Museums website to guide you in exploring the rich history and culture of 
                         Batangas through its beautiful museums. This website highlights the stunning architecture and fascinating exhibits 
@@ -44,7 +51,7 @@ const projectDetails = [
         link:           'https://jilbertvasquez.github.io/MuseumRevive/',
     },
     {
-        image:          'src/assets/CelestialHotel.png',
+        image:          CelestialHotel,
         title:          'Celestial Hotel',
         description:    `A website that showcases many options for guest rooms, suites, and other luxurious hotel features. 
                         Not excluded were the boutique, contact details, and reservation options. `,
