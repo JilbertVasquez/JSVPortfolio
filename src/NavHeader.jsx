@@ -10,11 +10,15 @@ function NavHeader () {
     return (
         <nav className='custom_bg_1 w-4/5 h-full columns-2 flex justify-around items-center px-16'>
             <div className=' w-1/3'>
-            <div className='h-10 w-36 px-4 flex justify-start items-center '>
-                        <a href="#Home" className='custom_font_color_1 uppercase font-black hover:border-b-2 text-white tracking-widest 3xl:text-2xl 2xl:text-xl' onClick={(e) => {scrollTo('Home', e);}}>JV</a>
+            <div className='h-10 w-36 px-4 flex justify-start items-center'>
+                        <a href="#Home" className='custom_font_color_1 uppercase font-black hover:border-b-2 text-white tracking-widest 3xl:text-2xl 2xl:text-xl ' onClick={(e) => {scrollTo('Home', e);}}>JV</a>
                     </div>
             </div>
-            <div className='columns-6 flex justify-between items-center w-2/3'>
+
+        
+
+
+            <div className='columns-6 justify-between items-center w-2/3 3xl:flex 2xl:flex xs:hidden'>
 
                     
                     {/* <div className='h-10 w-10 p-2 custom_bg_1 flex justify-center items-center'>
@@ -22,11 +26,11 @@ function NavHeader () {
                     </div> */}
 
                     <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
-                        <a href="#AboutMe" className='text-white uppercase hover:border-b-2 border-sky-500 tracking-widest 3xl:text-xl 2xl:text-lg' onClick={(e) => {scrollTo('AboutMe', e);}}>About Me</a>
+                        <a href="#AboutMe" className='uppercase hover:border-b-2 border-sky-500 tracking-widest 3xl:text-xl 2xl:text-lg  3xl:text-white 2xl:text-white xs:text-red-500' onClick={(e) => {scrollTo('AboutMe', e);}}>About Me</a>
                     </div>
 
                     <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
-                        <a href="#" className='custom_font_color_1 uppercase font-semibold hover:border-b-2 text-white tracking-widest 3xl:text-xl 2xl:text-lg' onClick={(e) => {scrollTo('Experience', e);}}>Experience</a>
+                        <a href="#" className='custom_font_color_1 uppercase font-semibold hover:border-b-2 text-white tracking-widest 3xl:text-xl 2xl:text-lg ' onClick={(e) => {scrollTo('Experience', e);}}>Experience</a>
                     </div>
 
                     <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>

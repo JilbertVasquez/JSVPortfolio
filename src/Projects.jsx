@@ -119,14 +119,7 @@ function Projects () {
                     <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-5 pb-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl' >Projects</h1>
                     <h3 className='text-white tracking-wider text-start px-5 pb-2 capitlize font-normal 3xl:text-lg 2xl:text-md'>Here are some of the projects I've worked on recently.</h3>
                 </div>
-                <div className=' grid grid-cols-3 gap-x-14 gap-y-20 px-14 p-6 mt-10'>
-                    {/* <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard /> */}
-
+                <div className=' grid gap-y-20 pt-6 pb-6 mt-10 3xl:grid-cols-3 2xl:grid-cols-3 xs:grid-cols-2 3xl:gap-x-14 2xl:gap-x-14 xs:gap-x-6 3xl:px-14 2xl:px-14 xs:px-0'>
                     {projectDetails.map((project, index) => (
                         <EventCard key={index}  image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
                     ))}
@@ -142,7 +135,7 @@ const EventCard = ({image, title, description, languages, link}) => {
         window.open(link, '_blank');
     };
     return (
-        <div className='event_shadow w-full h-full rounded-xl border-2 border-sky-500 p-4 px-6 hover:bg-gray-950'>
+        <div className='event_shadow w-full h-full rounded-xl border-2 border-sky-500 p-4 px-6 hover:bg-gray-950 '>
             <div className='w-full 3xl:h-2/6 2xl:3/6'>
                 <img className='w-full h-full rounded' src={image} alt="tumbnail" />
             </div>
@@ -152,7 +145,7 @@ const EventCard = ({image, title, description, languages, link}) => {
             <div className='w-full '>
                 <p className='text-white px-2 pt-2 pb-2 indent-6 text-justify 3xl:text-base 2xl:text-sm' >{description}</p>
             </div>
-            <div className='w-full   grid  gap-x-2 px-2 gap-y-1 justify-center 3xl:grid-cols-4 2xl:grid-cols-3'>
+            <div className='w-full   grid  gap-x-2 px-2 gap-y-2 justify-center 3xl:grid-cols-4 2xl:grid-cols-3'>
                 {languages.map((pl, index) => (
                     <h4 key={index} className='text-white w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase ' style={{ backgroundColor: backgroundColorBasedOnLanguage(pl) }} >{pl}</h4>
                 ))}

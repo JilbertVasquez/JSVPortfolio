@@ -8,7 +8,7 @@ import './custom.css';
 function Contact () {
 
     return (
-        <section className="container custom_bg_2 3xl h-full flex flex-col items-center " id='Contact'>
+        <section className="container custom_bg_2 3xl h-full flex flex-col items-center hidden" id='Contact'>
             <section className='w-4/5 h-4/6 flex flex-col pt-10 p-5 pb-0'>
                 <div className='w-full h-full px-16 '>
                     <h1 className='custom_font_color_1 tracking-wider text-start px-5 mt-20 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl' >Contact</h1>
@@ -34,7 +34,7 @@ function Contact () {
                     </div>
                 </div>
             </section>
-            <div className='w-full h-2/6 bg-sky-800  flex items-end '>
+            <div className='w-full h-2/6 bg-sky-800  items-end 3xl:flex 2xl:flex xs:hidden'>
                 <div className='w-full h-1/3 bg-white flex justify-center items-center mb-10'>
                     <SocialMedia />
                 </div>
