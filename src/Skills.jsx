@@ -29,12 +29,13 @@ const Skillset = [
         ],
     },
     {
-        title: 'Tools',
+        title: 'Tools / Platforms',
         languages: [
             { name: 'vscode',           image: 'logos/vscode.png' },
             { name: 'git',              image: 'logos/git.png' },
             { name: 'github',           image: 'logos/githublogo.png' },
             { name: 'netbeans',         image: 'logos/netbeans3.png' },
+            { name: 'netlify',         image: 'logos/netlify.png' },
         ],
     },
     {
