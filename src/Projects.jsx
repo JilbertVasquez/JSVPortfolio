@@ -31,7 +31,7 @@ const projectDetails = [
         title:          'BatStateU - Alangilan Campus Site Map',
         description:    'Developed an interactive React web application for navigation, allowing users to find buildings, specific rooms, and get directions with ease.',
         languages:      ['html', 'css', 'javascript', 'React'],
-        link:           '',
+        link:           'https://batstateu-tneu-alangilan-map.netlify.app/',
     },
     {
         image:          Vault,
