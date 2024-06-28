@@ -14,11 +14,11 @@ const Animation = ({animationData}) => {
     };
 
 return (
-    <div>
+    <div className='w-full h-full flex justify-center items-center'>
         <Lottie 
             options={defaultOptions}
-            height={450}
-            width={450}
+            height="125%"
+            width="125%"
         />
     </div>
     );

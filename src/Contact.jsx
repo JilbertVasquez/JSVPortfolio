@@ -11,24 +11,24 @@ function Contact () {
         <section className="container custom_bg_2 3xl h-full flex flex-col items-center " id='Contact'>
             <section className='w-4/5 h-4/6 flex flex-col pt-10 p-5 pb-0'>
                 <div className='w-full h-full px-16 '>
-                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 mt-20 text-3xl uppercase font-semibold' >Contact</h1>
-                    <div className='flex h-2/3 mt-2 '>
-                        <div className='w-4/6 pt-14 pb-5 px-5 flex flex-col items-start uppercase'>
-                            <h3 className='text-white text-xl capitalize mt-2 leading-8'>
+                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 mt-20 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl' >Contact</h1>
+                    <div className='flex h-2/3 mt-2'>
+                        <div className='w-4/6 pb-5 px-5 flex flex-col items-start uppercase 3xl:text-xl 2xl:text-lg 3xl:mt-2 2xl:mt-0 3xl:pt-14 2xl:pt-8'>
+                            <h3 className='text-white capitalize leading-8'>
                                 Jilbert S. Vasquez
                             </h3>
-                            <h3 className='text-white text-xl capitalize mt-2 leading-8'>
+                            <h3 className='text-white capitalizeleading-8'>
                                 bs cpe
                             </h3>
-                            <h3 className='text-white text-xl capitalize mt-2 leading-8'>
+                            <h3 className='text-white capitalize leading-8'>
                                 Batangas City, Batangas 
                             </h3>
                             <br />
-                            <h3 className='text-white  text-xl capitalize mt-2 leading-8 '>
+                            <h3 className='text-white lowercase leading-8 '>
                                 jilbertvaquez02@gmail.com
                             </h3>
                         </div>
-                        <div className='w-2/6  pb-5 flex justify-center items-center '>
+                        <div className='w-2/6 flex justify-center items-center'>
                             <Animation animationData={laptop} />
                         </div>
                     </div>

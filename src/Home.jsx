@@ -5,6 +5,8 @@ import Navigate from './Navigation';
 import jil1 from './assets/jil1.jpg';
 import NavHeader from './NavHeader';
 
+import mycv from './assets/Vasquez_Jilbert_S_Resume.pdf';
+
 function Home () {
 
     // const {text} = useTypewriter({
@@ -30,7 +32,7 @@ function Home () {
 
     return (
         <section className="con custom_bg_1 container 3xl h-screen flex justify-center" id="Home">
-            <div className='head custom_bg_1 h-14 flex justify-around items-center z-10 border-b-2 border-sky-950 z-99'>
+            <div className='head custom_bg_1 h-14 flex justify-around items-center z-10 border-b-2 border-sky-950'>
                 <NavHeader />
             </div>
             <section className=' h-screen w-4/5 flex justify-center items-center mx-auto'>
@@ -50,6 +52,11 @@ function Home () {
                             /><Cursor />
                         </h1>
                         <h1 className='text-white font-medium text-xl pt-1 pb-2'> &lt; Welcome-to-my-personal-website /&gt; </h1>
+                        <div className='pt-6'>
+                        <a href={mycv} download="Vasquez_Jilbert_S_Resume.pdf">
+                            <button className='bg-sky-700 text-white px-4 py-2 rounded-lg'>Download CV</button>
+                        </a>
+                    </div>
                     </div>
                 </div>
             </section>

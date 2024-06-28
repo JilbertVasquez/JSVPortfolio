@@ -54,8 +54,8 @@ function Skills () {
     return (
         <section className="container custom_bg_1 3xl flex justify-center items-center " id='Skills'>
             <section className='w-4/5 flex flex-col '>
-                <div className='w-full h-20 px-16 flex justify-center items-center  mt-14'>
-                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-2 text-3xl uppercase font-semibold' >Skiilsset/TechStack</h1>
+                <div className='w-full h-20 px-16 flex justify-center items-center mt-14'>
+                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl' >Skiilsset/TechStack</h1>
                 </div>
 
                 {Skillset.map((skill, index) => (
@@ -72,8 +72,8 @@ function Skills () {
 
 const EventCard = ({name, image}) => {
     return (
-        <div className='w-32 flex flex-col p-5 rounded-xl custom_bg_1  skill_shadow'>
-            <img className='w-full h-full' src={image} alt="tumbnail" />
+        <div className='w-32 flex flex-col items-center justify-center p-5 rounded-xl custom_bg_1 skill_shadow'>
+            <img className='h-full 3xl:w-full 2xl:w-4/5' src={image} alt="tumbnail" />
             <h3 className='text-white uppercase h-14 text-sm pt-2 flex items-center justify-center'>{name}</h3>
         </div>
     )

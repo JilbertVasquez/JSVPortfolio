@@ -116,8 +116,8 @@ function Projects () {
         <section className="container custom_bg_2 3xl flex justify-center items-center pb-8" id='Projects'>
             <section className='w-4/5 h-full flex flex-col'>
                 <div className='w-full px-16 mt-32'>
-                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-5 pb-2 text-3xl uppercase font-semibold' >Projects</h1>
-                    <h3 className='text-white tracking-wider text-start px-5 pb-2 text-lg capitlize font-normal'>Here are some of the projects I've worked on recently.</h3>
+                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-5 pb-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl' >Projects</h1>
+                    <h3 className='text-white tracking-wider text-start px-5 pb-2 capitlize font-normal 3xl:text-lg 2xl:text-md'>Here are some of the projects I've worked on recently.</h3>
                 </div>
                 <div className=' grid grid-cols-3 gap-x-14 gap-y-20 px-14 p-6 mt-10'>
                     {/* <EventCard />
@@ -142,30 +142,24 @@ const EventCard = ({image, title, description, languages, link}) => {
         window.open(link, '_blank');
     };
     return (
-        <div className='event_shadow w-full h-full rounded-xl border-2 border-sky-500  p-4 px-6 hover:bg-gray-950'>
-            <div className='w-full h-2/6'>
+        <div className='event_shadow w-full h-full rounded-xl border-2 border-sky-500 p-4 px-6 hover:bg-gray-950'>
+            <div className='w-full 3xl:h-2/6 2xl:3/6'>
                 <img className='w-full h-full rounded' src={image} alt="tumbnail" />
             </div>
             <div className='w-full '>
-                <h1 className='custom_font_color_1 tracking-wide px-4 pt-2 flex justify-center text-center text-lg capitalize font-medium' >{title}</h1>
+                <h1 className='custom_font_color_1 tracking-wide pt-2 flex justify-center text-center capitalize font-medium 3xl:text-lg 2xl:text-md 3xl:px-4 2xl:px-2' >{title}</h1>
             </div>
             <div className='w-full '>
-                <p className='text-white px-2 pt-2 pb-2 text-base indent-6 text-justify ' >{description}</p>
+                <p className='text-white px-2 pt-2 pb-2 indent-6 text-justify 3xl:text-base 2xl:text-sm' >{description}</p>
             </div>
-            <div className='w-full   grid grid-cols-4 gap-x-2 px-2 gap-y-1 justify-center'>
-                {/* <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >html</h4>
-                <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >css</h4>
-                <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >Javascript</h4>
-                <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >React</h4>
-                <h4 className='custom_font_color_1 w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase bg-black' >Tailwind</h4> */}
-
+            <div className='w-full   grid  gap-x-2 px-2 gap-y-1 justify-center 3xl:grid-cols-4 2xl:grid-cols-3'>
                 {languages.map((pl, index) => (
-                    <h4 key={index} className='text-white w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase' style={{ backgroundColor: backgroundColorBasedOnLanguage(pl) }} >{pl}</h4>
+                    <h4 key={index} className='text-white w-full p-0 rounded-full h-max text-xs justify-center items-center uppercase ' style={{ backgroundColor: backgroundColorBasedOnLanguage(pl) }} >{pl}</h4>
                 ))}
 
             </div>
             <div className='w-full mt-5 '>
-                <button className='rounded-full px-3 p-2 bg-black text-white' onClick={() => navigateToLink(link)}>Learn More</button>
+                <button className='rounded-full px-3 p-2 custom_bg_1 text-white 3xl:text-base 2xl:text-sm' onClick={() => navigateToLink(link)}>View Project</button>
             </div>
             
         </div>
