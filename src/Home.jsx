@@ -30,7 +30,7 @@ function Home () {
 
     return (
         <section className="con custom_bg_1 container 3xl h-screen flex justify-center" id="Home">
-            <div className='head custom_bg_1 h-14 flex justify-around items-center z-10'>
+            <div className='head custom_bg_1 h-14 flex justify-around items-center z-10 border-b-2 border-sky-950 z-99'>
                 <NavHeader />
             </div>
             <section className=' h-screen w-4/5 flex justify-center items-center mx-auto'>
