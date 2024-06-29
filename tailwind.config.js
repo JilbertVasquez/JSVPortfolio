@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     screens: {
+      'xxs': '360px',
       'xs': '384px',
       // 'xs': '384px',
       'sm': '640px',
@@ -28,6 +29,10 @@ export default {
       fontSize: {
         'xxs': '0.625rem', // 10px
         'xxxs': '0.5rem',  // 8px
+      },
+      width: {
+        'w-22': '5.5rem',
+
       },
     },
   },
