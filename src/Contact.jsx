@@ -28,7 +28,7 @@ function Contact () {
                                 jilbertvaquez02@gmail.com
                             </h3>
                         </div>
-                        <div className=' flex justify-center items-center mx-auto 3xl:w-2/6 2xl:w-2/6 xs:w-9/12 bg-white'>
+                        <div className=' flex justify-center items-center mx-auto 3xl:w-2/6 2xl:w-2/6 xs:w-5/6 '>
                             <Animation animationData={laptop} />
                         </div>
                     </div>

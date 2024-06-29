@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.24.7",
     "@eslint/config-array": "^0.16.0",
     "@eslint/object-schema": "^2.1.4",
     "@fontsource/montserrat": "^5.0.18",

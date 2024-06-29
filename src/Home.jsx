@@ -1,9 +1,10 @@
-import React from 'react';
+// import React from 'react';
 import { Typewriter, Cursor } from 'react-simple-typewriter';
 import './custom.css';
 import Navigate from './Navigation';
 import jil1 from './assets/jil1.jpg';
 import NavHeader from './NavHeader';
+import React, { useState } from 'react';
 
 import mycv from './assets/Vasquez_Jilbert_S_Resume.pdf';
 
@@ -31,8 +32,8 @@ function Home () {
     };
 // may h-screen yung section con 
     return (
-        <section className="con custom_bg_1 container 3xl flex justify-center" id="Home"> 
-            <div className='head custom_bg_1 h-14 flex justify-around items-center z-10 border-b-2 border-sky-950'>
+        <section className="con custom_bg_1 h-screen container 3xl flex justify-center" id="Home"> 
+            <div className='head custom_bg_1 flex justify-around items-center z-10 border-b-2 border-sky-950 3xl:h-14 2xl:h-14 xs:h-full'>
                 <NavHeader />
             </div>
             <section className=' h-screen w-4/5 flex justify-center items-center mx-auto 3xl:flex-row 2xl:flex-row xs:flex-col '>
