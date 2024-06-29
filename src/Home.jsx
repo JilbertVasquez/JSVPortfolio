@@ -9,7 +9,6 @@ import React, { useState } from 'react';
 import mycv from './assets/Vasquez_Jilbert_S_Resume.pdf';
 
 function Home () {
-
     // const {text} = useTypewriter({
     //     words: ['Computer Engineer', 'Web Developer', "Future Software Engineer"],
     //     loop: true,
@@ -33,9 +32,10 @@ function Home () {
 // may h-screen yung section con 
     return (
         <section className="con custom_bg_1 h-screen container 3xl flex justify-center" id="Home"> 
-            <div className='head custom_bg_1 flex justify-around items-center z-10 border-b-2 border-sky-950 3xl:h-14 2xl:h-14 xs:h-full'>
+            <div className='head custom_bg_1 flex justify-around items-center z-10 border-b-2 border-sky-950 '>
                 <NavHeader />
             </div>
+            
             <section className=' h-screen w-4/5 flex justify-center items-center mx-auto 3xl:flex-row 2xl:flex-row xs:flex-col '>
                 <div className='  flex justify-center items-center bg-red-50 3xl:h-screen 2xl:h-screen xs:h-2/4  3xl:w-2/5 2xl:w-2/5 xs:full'>
                     <img className='my-pic rounded-full w-4/5 border-2 border-sky-500 ' src={jil1} alt="jil-pic" />
