@@ -8,7 +8,7 @@ function Experience () {
         <section className="container custom_bg_1 3xl h-4/5 flex justify-center items-center " id='Experience'>
             <section className='w-4/5 h-4/5 flex flex-col'>
                 <div className='w-full h-20 px-16 flex justify-center items-center'>
-                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl 3xl:pt-2 2xl:pt-0' >Experience</h1>
+                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xs:text-xl 3xl:pt-2 2xl:pt-0' >Experience</h1>
                 </div>
 
                 <div className='flex flex-col gap-y-3 w-full my-5 pt-5 pb-5 3xl:mt-8 2xl:mt-10 3xl:px-16 2xl:px-16 xs:px-0'>
