@@ -57,7 +57,7 @@ function Skills () {
         <section className="container custom_bg_1 3xl h-max flex justify-center items-center" id='Skills'>
             <section className='w-4/5 flex flex-col'>
                 <div className='w-full h-20 px-16 flex justify-center items-center mt-14'>
-                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl xs:text-xl xxs:text-xl' >Skiilsset/TechStack</h1>
+                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl' >Skiilsset/TechStack</h1>
                 </div>
 
                 {Skillset.map((skill, index) => (
@@ -74,9 +74,9 @@ function Skills () {
 
 const EventCard = ({name, image}) => {
     return (
-        <div className=' flex flex-col items-center justify-center rounded-xl custom_bg_1 skill_shadow 3xl:w-32 2xl:w-32 xl:w-32 xs:w-24 xxs:w-20 3xl:p-5 2xl:p-5 xl:p-5 xs:pt-4 xxs:pt-4'>
-            <img className='h-full 3xl:w-full 2xl:w-4/5 xl:w-4/5 xs:w-3/5 xxs:w-3/5' src={image} alt="tumbnail" />
-            <h3 className='text-white uppercase h-14  flex items-center justify-center 3xl:pt-2 2xl:pt-2 xl:pt-2 xs:pt-0 xxs:pt-0 3xl:text-sm 2xl:text-sm xl:text-sm xs:text-xs xxs:text-xxs'>{name}</h3>
+        <div className=' flex flex-col items-center justify-center rounded-xl custom_bg_1 skill_shadow 3xl:w-32 2xl:w-32 xl:w-32 md:w-28 xs:w-24 xxs:w-20 3xl:p-5 2xl:p-5 xl:p-5 xs:pt-4 xxs:pt-4'>
+            <img className='h-full 3xl:w-full 2xl:w-4/5 xl:w-4/5 md:w-3/5 xs:w-3/5 xxs:w-3/5' src={image} alt="tumbnail" />
+            <h3 className='text-white uppercase h-14  flex items-center justify-center 3xl:pt-2 2xl:pt-2 xl:pt-2 md:pt-0 xs:pt-0 xxs:pt-0 3xl:text-sm 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xxs'>{name}</h3>
         </div>
     )
 }
@@ -84,13 +84,13 @@ const EventCard = ({name, image}) => {
 const EventCardContainer = ({skillset}) => {
     return (
         <div className='w-full flex flex-col'>
-            <div className='w-full h-14  flex mt-12 justify-center items-center 3xl:px-14 2xl:px-14 xl:px-14 xs:px-0 xxs:px-0'>
-                <h2 className='text-white tracking-wider w-full text-center uppercase font-semibold 3xl:text-lg 2xl:text-lg xl:text-lg xs:text-base xxs:text-base' >{skillset.title}</h2>
+            <div className='w-full h-14  flex mt-12 justify-center items-center 3xl:px-14 2xl:px-14 xl:px-14 md:px-0 xs:px-0 xxs:px-0'>
+                <h2 className='text-white tracking-wider w-full text-center uppercase font-semibold 3xl:text-lg 2xl:text-lg xl:text-lg md:text-lg xs:text-base xxs:text-base' >{skillset.title}</h2>
                 {/* {skillset.map((skill, index) => (
                     <h2 key={index} className='text-white tracking-wider text-start px-5 text-lg uppercase font-semibold' >{skill.title}</h2>
                 ))} */}
             </div>
-            <div className='pt-8 w-full  pb-10 flex flex-wrap justify-center items-center 3xl:px-24 2xl:px-24 xl:px-6 xs:px-0 xxs:px-0 3xl:gap-10 2xl:gap-10 xl:gap-6 xs:gap-2 xxs:gap-4'>
+            <div className='pt-8 w-full  pb-10 flex flex-wrap justify-center items-center 3xl:px-24 2xl:px-24 xl:px-6 md:px-0 xs:px-0 xxs:px-0 3xl:gap-10 2xl:gap-10 xl:gap-6 md:gap-3 xs:gap-2 xxs:gap-4'>
                 {skillset.languages.map((skills, index) => (
                     <EventCard key={index} name={skills.name} image={skills.image} />
                 ))}
