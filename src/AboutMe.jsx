@@ -16,7 +16,7 @@ function AboutMe () {
                                 I use my creativity to create designs and strong analytical skills to tackle the logical aspects of applications.
                             </p>
                             <br />
-                            <p className='text-white text-justify indent-14 leading-8 3xl:text-xl 2xl:text-lg xl:text-lg md:text-lg xs:text-sm xxs:text-sm'>
+                            <p className='text-white text-justify leading-8 3xl:indent-14 2xl:indent-14 xl:indent-10 md:indent-10 xs:indent-8  xxs:indent-6 3xl:text-xl 2xl:text-lg xl:text-lg md:text-lg xs:text-sm xxs:text-sm'>
                             Residing in Batangas City, Batangas, I am prepared to take on challenging software development projects. 
                             I am versatile, offering support in networks, a solid foundation in hardware, and full-stack capabilities in software.
                             </p>
