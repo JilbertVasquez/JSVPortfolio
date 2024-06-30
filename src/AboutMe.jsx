@@ -4,7 +4,7 @@ import codingperson from '../public/codingperson.json';
 function AboutMe () {
 
     return (
-        <section className="container custom_bg_2 3xl flex justify-center items-center 3xl:h-4/5 2xl:h-4/5 xl:h-4/5 md:h-full xs:h-full  xxs:h-full" id='AboutMe'>
+        <section className=" custom_bg_2 3xl flex justify-center items-center 3xl:h-4/5 2xl:h-4/5 xl:h-4/5 md:h-full xs:h-full  xxs:h-full" id='AboutMe'>
             <section className='w-4/5 flex 3xl:h-4/5 2xl:h-4/5 xl:h-4/5 md:h-4/5 xs:h-4/5 xxs:h-4/5'>
                 <div className=' w-full h-full '>
                     <h1 className='custom_font_color_1 tracking-wider text-start pt-5 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl 3xl:px-5 2xl:px-5 xl:px-5 md:px-5 xs:px-0 xxs:px-0' >About Me</h1>
@@ -21,7 +21,7 @@ function AboutMe () {
                             I am versatile, offering support in networks, a solid foundation in hardware, and full-stack capabilities in software.
                             </p>
                         </div>
-                        <div className=' flex justify-center items-center 3xl:w-1/3 2xl:w-1/3 xl:w-1/3 md:w-full xs:w-full xxs:w-full 3xl:h-2/3 2xl:h-2/3 xl:h-2/3 md:h-2/4 xs:h-1/3 xxs:h-1/3 pt-0 xxs:pt-5 pb-0 xxs:pb-5'>
+                        <div className=' flex justify-center items-center 3xl:w-1/3 2xl:w-1/3 xl:w-1/3 md:w-full xs:w-full xxs:w-full 3xl:h-2/3 2xl:h-2/3 xl:h-2/3 md:h-2/4 sm:h-2/4 xs:h-1/3 xxs:h-1/3 pt-0 xxs:pt-5 pb-0 xxs:pb-5'>
                             <Animation animationData={codingperson} />
                         </div>
                     </div>

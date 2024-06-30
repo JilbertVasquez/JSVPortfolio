@@ -113,7 +113,7 @@ const backgroundColorBasedOnLanguage= (language) => {
 function Projects () {
 
     return (
-        <section className="container custom_bg_2 3xl flex h-max justify-center items-center pb-8" id='Projects'>
+        <section className=" custom_bg_2 3xl flex h-max justify-center items-center pb-8" id='Projects'>
             <section className='w-4/5 h-full flex flex-col'>
                 <div className='w-full mt-32 3xl:px-16 2xl:px-16 xl:px-16 md:px-2 xs:px-2 xxs:px-2'>
                     <h1 className='custom_font_color_1 tracking-wider text-start pt-5 pb-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl  xs:text-xl xxs:text-xl 3xl:px-5 2xl:px-5 xl:px-5 md:px-0 xs:px-0 xxs:px-0' >Projects</h1>

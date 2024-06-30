@@ -31,13 +31,13 @@ function Home () {
     };
 // may h-screen yung section con 
     return (
-        <section className="con custom_bg_1 h-screen container 3xl flex justify-center" id="Home"> 
+        <section className="con custom_bg_1 h-screen w-full flex justify-center" id="Home"> 
             <div className='head custom_bg_1 flex justify-center items-center z-10 border-b-2 border-sky-950 '>
                 <NavHeader />
             </div>
             
-            <section className=' h-screen w-4/5 flex justify-center items-center mx-auto 3xl:flex-row 2xl:flex-row xl:flex-row md:flex-col xs:flex-col xxs:flex-col'>
-                <div className='  flex justify-center items-center 3xl:h-screen 2xl:h-screen xl:h-2/4 xs:h-2/4 xxs:h-2/4  3xl:w-2/5 2xl:w-2/5 xl:w-2/5 md:w-3/4 xs:w-full md:pt-14'>
+            <section className=' h-screen w-4/5 flex justify-center items-center mx-auto 3xl:flex-row 2xl:flex-row xl:flex-row md:flex-col sm:md:flex-col xs:flex-col xxs:flex-col'>
+                <div className='  flex justify-center items-center 3xl:h-screen 2xl:h-screen xl:h-2/4 md:h-2/4 sm:h-3/4 xs:h-3/4 xxs:h-3/4  3xl:w-2/5 2xl:w-2/5 xl:w-2/5 md:w-3/4 sm:w-full xs:w-full md:pt-14'>
                     <img className='my-pic rounded-full w-4/5 border-2 border-sky-500 ' src={jil1} alt="jil-pic" />
                 </div>
                 <div className=' w-3/5 flex justify-start items-center 3xl:2-screen 2xl:h-screen xl:h-screen md:h-2/4 xs:h-2/4 xxs:h-2/4 3xl:px-20 2xl:px-20 xl:px-20 md:px-0 xs:px-0 xxs:px-0 3xl:w-3/5 2xl:w-3/5 xl:w-3/5  md:w-full xs:w-full xxs:w-full'>

@@ -54,7 +54,7 @@ const Skillset = [
 function Skills () {
 
     return (
-        <section className="container custom_bg_1 3xl h-max flex justify-center items-center" id='Skills'>
+        <section className=" custom_bg_1 3xl h-max flex justify-center items-center" id='Skills'>
             <section className='w-4/5 flex flex-col'>
                 <div className='w-full h-20 px-16 flex justify-center items-center mt-14'>
                     <h1 className='custom_font_color_1 tracking-wider text-start px-5 pt-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl' >Skiilsset/TechStack</h1>

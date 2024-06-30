@@ -24,7 +24,7 @@ function Container () {
     }
     return (
         
-        <div className="container w-full h-screen overflow-auto">
+        <div className="w-full h-screen">
 
             <Home />
             <AboutMe />
