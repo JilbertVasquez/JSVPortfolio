@@ -84,10 +84,11 @@
 
 /* ----------------------------------------Certification----------------------------------------- */
 
-.cert-head {
-    height: 8%;
+.min-h-cert {
+    min-height: 80%;
 }
 
-.cert-height {
-    height: 92%;
+.cert-head {
+    height: 5%;
 }
+

@@ -9,8 +9,8 @@ import SoloLearn from "./Certifications/SoloLearn";
 function Certification () {
     
     return (
-        <section className="cert-con custom_bg_2 h-4/5 flex justify-center items-center">
-            <section className="w-4/5 bg-white h-full">
+        <section className="cert-con custom_bg_2 min-h-cert flex justify-center items-start pt-10">
+            <section className="w-4/5 h-full">
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<Layout />}>
