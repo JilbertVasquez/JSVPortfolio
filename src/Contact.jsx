@@ -8,7 +8,7 @@ import './custom.css';
 function Contact () {
 
     return (
-        <section className=" custom_bg_2 3xl h-full flex flex-col items-center" id='Contact'>
+        <section className=" custom_bg_1 3xl h-full flex flex-col items-center" id='Contact'>
             <section className='w-4/5 flex flex-col pt-10 pb-0 3xl:h-4/6 2xl:h-4/6 xl:h-4/6 md:h-5/6 xs:h-5/6 xxs:h-5/6'>
                 <div className='w-full h-full 3xl:px-16 2xl:px-16 xl:px-16 md:px-2 xs:px-2 xxs:px-2  '>
                     <h1 className='custom_font_color_1 tracking-wider text-start uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl 3xl:px-5 2xl:px-5 xl:px-5 md:px-0 xs:px-0  xxs:px-0 3xl:mt-20 2xl:mt-20 xl:mt-20 md:my-10 xs:my-10 xxs:my-10' >Contact</h1>

@@ -5,6 +5,7 @@ import AboutMe from './AboutMe.jsx'
 import Experience from './Experience.jsx'
 import Projects from './Projects.jsx'
 import Skills from './Skills.jsx'
+import Certification from './Certification.jsx';
 import Contact from './Contact.jsx'
 import Loading from './Loading.jsx';
 
@@ -31,6 +32,7 @@ function Container () {
             <Experience />
             <Projects />
             <Skills />
+            <Certification />
             <Contact />
         </div>
     )

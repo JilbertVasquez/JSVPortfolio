@@ -80,3 +80,14 @@
     transition: 0.2s ease-in;
     transform: scale(1.1);
 }
+
+
+/* ----------------------------------------Certification----------------------------------------- */
+
+.cert-head {
+    height: 8%;
+}
+
+.cert-height {
+    height: 92%;
+}
