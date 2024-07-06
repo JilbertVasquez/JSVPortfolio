@@ -26,7 +26,7 @@ function Experience () {
 
                             <div></div>
                             <PillarBottom />
-                            <EventCard title="Programming Academic Commissioner" date="Oct 2022 - Feb 2024" companyname="Self-Employed" location="Batangas City, Batangas" />
+                            <EventCard title="Freelancer" date="Oct 2022 - Feb 2024" companyname="Self-Employed" location="Batangas City, Batangas" />
                             
                             
                         </div>

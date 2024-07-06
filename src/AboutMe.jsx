@@ -1,6 +1,6 @@
 import React from 'react';
 import Animation from './Animation.jsx';
-import codingperson from '../public/codingperson.json';
+import codingperson from '/public/codingperson.json';
 function AboutMe () {
 
     return (

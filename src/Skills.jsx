@@ -74,7 +74,7 @@ function Skills () {
 
 const EventCard = ({name, image}) => {
     return (
-        <div className=' flex flex-col items-center justify-center rounded-xl custom_bg_1 skill_shadow 3xl:w-32 2xl:w-32 xl:w-32 md:w-28 xs:w-24 xxs:w-20 3xl:p-5 2xl:p-5 xl:p-5 xs:pt-4 xxs:pt-4'>
+        <div className=' flex flex-col items-center justify-center rounded-xl custom_bg_1 skill_shadow 3xl:w-32 2xl:w-32 xl:w-32 md:w-28 xs:w-24 xxs:w-20 3xl:p-5 2xl:p-5 xl:p-5 xs:pt-4 xxs:pt-4 hover:scale-105'>
             <img className='h-full 3xl:w-full 2xl:w-4/5 xl:w-4/5 md:w-3/5 xs:w-3/5 xxs:w-3/5' src={image} alt="tumbnail" />
             <h3 className='text-white uppercase h-14  flex items-center justify-center 3xl:pt-2 2xl:pt-2 xl:pt-2 md:pt-0 xs:pt-0 xxs:pt-0 3xl:text-sm 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xxs'>{name}</h3>
         </div>
