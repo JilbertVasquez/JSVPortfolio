@@ -12,7 +12,7 @@ function Layout () {
                     <Link to="/Sololearn">SoloLearn</Link>
                 </div>
                 <div  className=" p-1 h-4/5 text-white hover:border-b-2 border-white">
-                    <Link to="/Sololearn">Udemy</Link>
+                    <Link to="/Udemy">Udemy</Link>
                 </div>
                 <div  className=" p-1 h-4/5 text-white hover:border-b-2 border-white">
                     <Link to="/TestDome">TestDome</Link>

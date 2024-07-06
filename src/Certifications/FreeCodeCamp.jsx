@@ -10,12 +10,12 @@ function FreeCodeCamp() {
         {
             name: "Responsive Web Design",
             image: Responsive_Web_Design_Certificate,
-            link: "https://www.google.com",
+            link: "https://www.freecodecamp.org/certification/jilbertvasquez/responsive-web-design",
         }, 
         {
             name: "Javascript Algorithms and Data Structure",
             image: JavaScript_Certificate,
-            link: "https://www.google.com",
+            link: "https://www.freecodecamp.org/settings#cert-javascript-algorithms-and-data-structures",
         }
     ]
 

@@ -11,22 +11,22 @@ function SoloLearn () {
         {
             name: "JAVA",
             image: JAVA,
-            link: "https://www.google.com",
+            link: "https://www.sololearn.com/certificates/CT-OQ5ZOGSI",
         }, 
         {
             name: "SQL",
             image: SQL,
-            link: "https://www.google.com",
+            link: "https://www.sololearn.com/certificates/CT-XEEP9I41",
         },
         {
             name: "Intermediate Python",
             image: Intermediate_Python,
-            link: "https://www.google.com",
+            link: "https://www.sololearn.com/certificates/CT-VKPAJQG1",
         }, 
         {
             name: "Python Data Structures",
             image: Python_Data_Structures,
-            link: "https://www.google.com",
+            link: "https://www.sololearn.com/certificates/CT-TDHWNL1N",
         }
     ]
 
