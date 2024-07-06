@@ -11,11 +11,14 @@ function TestDomeCertificate({name, link, color}) {
     }, []);
 
     return (
-        <a href={link} className={`testdome-certificate-stamp ${color}`}>
+        <div className='w-48 flex justify-center'>
+            <a href={link} className={`testdome-certificate-stamp ${color}`}>
             <span className="testdome-certificate-name">Jilbert S. Vasquez</span>
             <span className="testdome-certificate-test-name">{name}</span>
             <span className="testdome-certificate-card-logo">TestDome<br />Certificate</span>
         </a>
+        </div>
+        
     );
 }
 

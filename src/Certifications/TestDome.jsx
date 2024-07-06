@@ -74,7 +74,7 @@ function TestDome() {
     ]
 
     return (
-        <section className='container  flex justify-start p-5 gap-y-10 gap-x-5 flex-wrap scale-110'>
+        <section className=' mt-10 container flex justify-start p-5 gap-y-10 gap-x-5 flex-wrap lg:justify-start xxs:justify-center xxs:gap-y-4'>
             {testdomecert.map((cert, index) => (
                 < TestDomeCertificate key={index} name={cert.name} link={cert.link} color={cert.color} />
             ))}

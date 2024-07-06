@@ -20,7 +20,7 @@ function FreeCodeCamp() {
     ]
 
     return (
-        <section className='container  flex justify-start p-5 gap-y-10 flex-wrap'>
+        <section className='container flex justify-start p-5 gap-y-0 flex-wrap'>
             {freecodecampCert.map((cert, index) => (
                 <CertContainer key={index} name={cert.name} image={cert.image} link={cert.link} />
             ))}
