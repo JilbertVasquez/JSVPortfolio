@@ -5,6 +5,7 @@ import './custom.css';
 import Layout from "./Certifications/Layout";
 import FreeCodeCamp from "./Certifications/FreeCodeCamp";
 import SoloLearn from "./Certifications/SoloLearn";
+import TestDome from "./Certifications/TestDome";
 
 function Certification () {
     
@@ -16,7 +17,7 @@ function Certification () {
                         <Route path="/" element={<Layout />}>
                             <Route index element={<FreeCodeCamp />} />
                             <Route path="SoloLearn" element={<SoloLearn />} />
-                            <Route path="SoloLearn" element={<SoloLearn />} />
+                            <Route path="Testdome" element={<TestDome />} />
                         </Route>
                     </Routes>
                 </BrowserRouter>

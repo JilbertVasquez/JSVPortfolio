@@ -32,7 +32,7 @@ function Container () {
             <Experience />
             <Projects />
             <Skills />
-            {/* <Certification /> */}
+            <Certification />
             <Contact />
         </div>
     )

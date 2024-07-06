@@ -1,7 +1,7 @@
 
 import '../custom.css';
-import Responsive_Web_Design_Certificate from '../../public/certs/FreeCodeCamp/Responsive_Web_Design_Certificate.png';
-import JavaScript_Certificate from '../../public/certs/FreeCodeCamp/JavaScript_Certificate.png';
+import Responsive_Web_Design_Certificate from '/certs/FreeCodeCamp/Responsive_Web_Design_Certificate.png';
+import JavaScript_Certificate from '/certs/FreeCodeCamp/JavaScript_Certificate.png';
 
 import CertContainer from './CertContainer.jsx';
 
