@@ -14,6 +14,9 @@ import Master_Course_in_Cloud_Computing_and_Cloud_Architecture_2v0 from '/certs/
 import Machine_Learning_Fundamental_of_Python_Machine_Learning from '/certs/Udemy/Machine_Learning_Fundamental_of_Python_Machine_Learning.jpg';
 import Web_Development_Masterclass_Online_Certification_Course from '/certs/Udemy/Web_Development_Masterclass_Online_Certification_Course.jpg';
 
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+
 function Udemy () {
     const freecodecampCert = [
         {
@@ -78,11 +81,22 @@ function Udemy () {
         }
     ]
 
+    const {ref: myRef1, inView: skills1} = useInView({ triggerOnce: true });
+
     return (
-        <section className='container  flex justify-start p-5 gap-y-0 flex-wrap'>
-            {freecodecampCert.map((cert, index) => (
-                <CertContainer key={index} name={cert.name} image={cert.image} link={cert.link} />
-            ))}
+        <section ref={myRef1} className='container '>
+            {skills1 && <div className='container  flex justify-start p-5 gap-y-0 flex-wrap'>
+                {freecodecampCert.map((cert, index) => (
+                    <motion.div
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 1, delay: index * 0.5, ease: "easeInOut"}}
+                    className="w-1/5"
+                    >
+                        <CertContainer key={index} name={cert.name} image={cert.image} link={cert.link} />
+                    </motion.div>
+                ))}
+            </div>}
         </section>
     )
 }

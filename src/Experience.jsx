@@ -1,32 +1,82 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 import './custom.css';
 
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+
 function Experience () {
+
+    const {ref: myRef1, inView: experience1} = useInView({ triggerOnce: true });
+    const {ref: myRef2, inView: experience2} = useInView({ triggerOnce: true });
+    const {ref: myRef3, inView: experience3} = useInView({ triggerOnce: true });
 
     return (
         <section className=" custom_bg_1 3xl h-4/5 flex justify-center items-center " id='Experience'>
-            <section className='w-4/5 h-4/5 flex flex-col'>
+            <section className='w-4/5 flex flex-col'>
                 <div className='w-full h-20 px-16 flex justify-center items-center'>
-                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl 3xl:pt-2 2xl:pt-0 xl:pt-0' >Experience</h1>
+                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl 3xl:pt-2 2xl:pt-0 xl:pt-0 ' >Experience</h1>
                 </div>
 
-                <div className='flex flex-col gap-y-3 w-full my-5 pt-5 pb-5 3xl:mt-8 2xl:mt-10 xl:mt-10 3xl:px-16 2xl:px-16 xl:px-16 md:px-0 xs:px-0 xxs:px-0'>
+                <div className='flex flex-col gap-y-3 w-full my-5 pt-5 pb-5 3xl:mt-8 2xl:mt-10 xl:mt-10 3xl:px-16 2xl:px-16 xl:px-16 md:px-0 xs:px-0 xxs:px-0 overflow-hidden'>
                     <div>
-                        <div className='grid gap-x-2 item-center 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-3 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-y-0 2xl:gap-y-0 xl:gap-y-0 md:gap-y-0 xs:gap-y-2 xxs:gap-y-1'>
-                            <EventCard title="Web Developer Intern" date="Feb 2024 - Apr 2024" companyname="ICT Services Alangilan Campus" location="BatStateU, Batangas City, Batangas" />
-                            <PillarTop />
+                        <div className=' grid gap-x-2 item-center 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-3 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-y-0 2xl:gap-y-0 xl:gap-y-0 md:gap-y-0 xs:gap-y-2 xxs:gap-y-1 overflow-hidden'>
+                            <div ref={myRef1}>
+                                {experience1 && <motion.div
+                                initial={{x: '-100%'}}
+                                animate={{x: 0}}
+                                transition={{duration: 0.75, delay: 1.25, ease: "easeInOut"}}
+                                > 
+                                    <EventCard title="Web Developer Intern" date="Feb 2024 - Apr 2024" companyname="ICT Services Alangilan Campus" location="BatStateU, Batangas City, Batangas" />
+                                </motion.div>}
+                            </div>
+                            {experience1 && <motion.div
+                            initial={{y: '-100%'}}
+                            animate={{y: 0}}
+                            transition={{duration: 1, delay: 1, ease: "easeInOut"}}
+                            className=" overflow-hidden"
+                            >
+                                <PillarTop />
+                            </motion.div>}
                             <div></div>
-                            
-                            <div className='h-full'>
-                            </div>
-                            <Pillar />
-                            <div className='h-full'>
-                            </div>
 
                             <div></div>
-                            <PillarBottom />
-                            <EventCard title="Freelancer" date="Oct 2022 - Feb 2024" companyname="Self-Employed" location="Batangas City, Batangas" />
+                            {experience2 && <motion.div
+                            initial={{y: '-200%'}}
+                            animate={{y: 0}}
+                            transition={{duration: 1.5, delay: 1.10, ease: "easeInOut"}}
+                            className=" overflow-hidden"
+                            >
+                                <Pillar />
+                            </motion.div>}
+                            <div ref={myRef2}>
+                                {experience2 && <motion.div
+                                initial={{x: '100%'}}
+                                animate={{x: 0}}
+                                transition={{duration: 0.75, delay: 1.75, ease: "easeInOut"}}
+                                > 
+                                    <EventCard title="Freelance Developer" date="Oct 2022 - Feb 2024" companyname="Self-Employed" location="Batangas City, Batangas" />
+                                </motion.div>}
+                            </div>
+
+                            <div ref={myRef3}>
+                                {experience3 && <motion.div
+                                initial={{x: '-100%'}}
+                                animate={{x: 0}}
+                                transition={{duration: 0.75, delay: 2.25, ease: "easeInOut"}}
+                                > 
+                                    <EventCard title="Freelance AutoCAD Drafter" date="Apr 2021 - May 2021" companyname="Self-Employed" location="Batangas City, Batangas" />
+                                </motion.div>}
+                            </div>
+                            {experience3 && <motion.div
+                            initial={{y: '-300%'}}
+                            animate={{y: 0}}
+                            transition={{duration: 2, delay: 0.95, ease: "easeInOut"}}
+                            className=" overflow-hidden"
+                            >
+                                <PillarBottom />
+                            </motion.div>}
+                            <div></div>
                             
                             
                         </div>

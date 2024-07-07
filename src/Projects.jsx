@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Portfolio from './assets/Portfolio.png';
 import DFSLogin from './assets/DFSLogin.png';
 import BatStateUCampusMap from './assets/BatStateUCampusMap.png';
@@ -6,6 +6,7 @@ import Vault from './assets/Vault.png';
 import MuseumRevive from './assets/MuseumRevive.png';
 import CelestialHotel from './assets/CelestialHotel.png';
 
+import { motion } from "framer-motion";
 
 import './custom.css';
 
@@ -112,9 +113,25 @@ const backgroundColorBasedOnLanguage= (language) => {
 
 function Projects () {
 
+    const [displayShow, setDisplayShow] = useState('show more');
+    const [show1, setShow1] = useState(false);
+
+    const showMore1 = () => {
+        setShow1(!show1);
+    }
+
+    const showDisplay = () => {
+        if (displayShow != 'show more') {
+            setDisplayShow('show more');
+        }
+        else {
+            setDisplayShow('show less');
+        }
+    }
+
     return (
         <section className=" custom_bg_2 3xl flex h-max justify-center items-center pb-8" id='Projects'>
-            <section className='w-4/5 h-full flex flex-col'>
+            <section className='w-4/5 h-full flex flex-col '>
                 <div className='w-full mt-32 3xl:px-16 2xl:px-16 xl:px-16 md:px-2 xs:px-2 xxs:px-2'>
                     <h1 className='custom_font_color_1 tracking-wider text-start pt-5 pb-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl  xs:text-xl xxs:text-xl 3xl:px-5 2xl:px-5 xl:px-5 md:px-0 xs:px-0 xxs:px-0' >Projects</h1>
                     <h3 className='text-white tracking-wider text-justify pb-2 capitlize font-normal 3xl:text-lg 2xl:text-base xl:text-base md:text-base xs:text-sm xxs:text-sm 3xl:px-5 2xl:px-5 xl:px-5 md:px-0 xs:px-0 xxs:px-0'>Here are some of the projects I've worked on recently.</h3>
@@ -123,7 +140,14 @@ function Projects () {
                     {projectDetails.map((project, index) => (
                         <EventCard key={index}  image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
                     ))}
-
+                </div>
+                <div className='w-full flex justify-center items-center p-5'>
+                    <button className='uppercase rounded-full px-3 p-2 custom_bg_1 text-white 3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs' onClick={(e) => {showDisplay(); showMore1();} }>{displayShow}</button>
+                </div>
+                <div className= {` ${show1 ? "flex" : "hidden"} grid pt-6 pb-6 mt-10 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-x-14 2xl:gap-x-14 xl:gap-x-8 xs:gap-x-6 xxs:gap-x-6 3xl:px-14 2xl:px-14 xl:px-14 xs:px-0 xxs:px-0 3xl:gap-y-20 2xl:gap-y-20 xl:gap-y-20 xs:gap-y-8 xxs:gap-y-8`}>
+                    {projectDetails.map((project, index) => (
+                        <EventCard key={index}  image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
+                    ))}
                 </div>
             </section>
         </section>
