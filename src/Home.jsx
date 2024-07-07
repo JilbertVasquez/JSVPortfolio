@@ -36,8 +36,8 @@ function Home () {
                 {hello && <motion.div
                     initial={{opacity: 0, scale: 0}}
                     animate={{opacity: 1, scale: 1}}
-                    transition={{duration: 1, delay: 0, ease: "easeInOut"}}>
-                    <img className='my-pic rounded-full w-4/5 border-2 border-sky-500 ' src={jil1} alt="jil-pic" />
+                    transition={{duration: 1, delay: 0, ease: "easeInOut"}} className="flex justify-center items-center">
+                    <img className='my-pic  rounded-full w-4/5 border-2 border-sky-500 ' src={jil1} alt="jil-pic" />
                 </motion.div> }
                 </div>
                 <div className=' w-3/5 flex justify-start items-center 3xl:2-screen 2xl:h-screen xl:h-screen md:h-2/4 xs:h-2/4 xxs:h-2/4 3xl:px-20 2xl:px-20 xl:px-20 md:px-0 xs:px-0 xxs:px-0 3xl:w-3/5 2xl:w-3/5 xl:w-3/5  md:w-full xs:w-full xxs:w-full'>
