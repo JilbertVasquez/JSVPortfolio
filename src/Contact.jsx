@@ -5,6 +5,9 @@ import laptop from '../public/laptop.json';
 
 import './custom.css';
 
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+
 function Contact () {
 
     return (
@@ -75,15 +78,33 @@ const Accounts = [
 ];
 
 const SocialMedia = () => {
+
+    const {ref: myRef1, inView: socMed} = useInView({ triggerOnce: true });
+
     return (
-        <div className='w-full h-full bg-white flex justify-center items-center gap-x-10'>
-            {Accounts.map((socmed, index) => (
+        <div ref={myRef1} className='w-full h-full bg-white '>
+            {/* {Accounts.map((socmed, index) => (
                 <div className='rounded-full h-2/4' key={index}>
                     <a className='h-full w-full' href={socmed.link} target="_blank" rel="noopener noreferrer">
                         <img className='w-full h-full socmed' src={socmed.image} alt={socmed.socialmedia} />
                     </a>
                 </div>
-))}
+            ))} */}
+            {socMed && <div className='w-full h-full flex justify-center items-center gap-x-10 overflow-hidden'>
+                {Accounts.map((socmed, index) => (
+                    <motion.div
+                    initial={{y: index % 2 == 0 ? '-200%' : '200%' }}
+                    animate={{y: '0'}}
+                    transition={{duration: 1, delay: index * 0.5, ease: "easeInOut"}}
+                    className='rounded-full h-2/4' 
+                    key={index}
+                    >
+                        <a className='h-full w-full' href={socmed.link} target="_blank" rel="noopener noreferrer">
+                            <img className='w-full h-full socmed' src={socmed.image} alt={socmed.socialmedia} />
+                        </a>
+                    </motion.div>
+                ))}
+            </div>}
         </div>
     );
 }

@@ -6,7 +6,13 @@ import Vault from './assets/Vault.png';
 import MuseumRevive from './assets/MuseumRevive.png';
 import CelestialHotel from './assets/CelestialHotel.png';
 
+import tributepage from './assets/tributepage.png';
+import surveyform from './assets/surveyform.png';
+import technicaldocumentationpage from './assets/technicaldocumentationpage.png';
+import landingpage from './assets/landingpage.png';
+
 import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 import './custom.css';
 
@@ -69,6 +75,37 @@ const projectDetails = [
     // },
 ];
 
+const projectDetails2 = [
+    {
+        image:          tributepage,
+        title:          'Tribute Page (2021)',
+        description:    `Freecodecamp Responsive Web Design Project. Build a tribute page for a subject of your choosing, fictional or real.`,
+        languages:      ['html', 'css'],
+        link:           'https://codepen.io/JilbertVasquez/full/oNwdxdW',
+    },
+    {
+        image:          surveyform,
+        title:          'Survey Form (2021)',
+        description:    `Freecodecamp Responsive Web Design Project. Build a survey form to collect data from your users.`,
+        languages:      ['html', 'css'],
+        link:           'https://codepen.io/JilbertVasquez/full/GREYVyB',
+    },
+    {
+        image:          landingpage,
+        title:          'Landing Page (2021)',
+        description:    `Freecodecamp Responsive Web Design Project. Build a product landing page to market a product of your choice.`,
+        languages:      ['html', 'css'],
+        link:           'https://codepen.io/JilbertVasquez/full/gORqRKP',
+    },
+    {
+        image:          technicaldocumentationpage,
+        title:          'Technical Documentation Page (2021)',
+        description:    `Freecodecamp Responsive Web Design Project. Build a technical documentation page to serve as instruction or reference for a topic.`,
+        languages:      ['html', 'css'],
+        link:           'https://codepen.io/JilbertVasquez/full/GREaPvK',
+    },
+];
+
 const backgroundColorBasedOnLanguage= (language) => {
     switch (language.toLowerCase()) {
         case 'html':
@@ -129,25 +166,48 @@ function Projects () {
         }
     }
 
+    const {ref: myRef1, inView: skills1} = useInView({ triggerOnce: true });
+
     return (
-        <section className=" custom_bg_2 3xl flex h-max justify-center items-center pb-8" id='Projects'>
+        <section ref={myRef1} className=" custom_bg_2 3xl flex h-max justify-center items-center pb-8" id='Projects'>
             <section className='w-4/5 h-full flex flex-col '>
                 <div className='w-full mt-32 3xl:px-16 2xl:px-16 xl:px-16 md:px-2 xs:px-2 xxs:px-2'>
                     <h1 className='custom_font_color_1 tracking-wider text-start pt-5 pb-2 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl  xs:text-xl xxs:text-xl 3xl:px-5 2xl:px-5 xl:px-5 md:px-0 xs:px-0 xxs:px-0' >Projects</h1>
                     <h3 className='text-white tracking-wider text-justify pb-2 capitlize font-normal 3xl:text-lg 2xl:text-base xl:text-base md:text-base xs:text-sm xxs:text-sm 3xl:px-5 2xl:px-5 xl:px-5 md:px-0 xs:px-0 xxs:px-0'>Here are some of the projects I've worked on recently.</h3>
                 </div>
-                <div className=' grid pt-6 pb-6 mt-10 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-x-14 2xl:gap-x-14 xl:gap-x-8 xs:gap-x-6 xxs:gap-x-6 3xl:px-14 2xl:px-14 xl:px-14 xs:px-0 xxs:px-0 3xl:gap-y-20 2xl:gap-y-20 xl:gap-y-20 xs:gap-y-8 xxs:gap-y-8'>
-                    {projectDetails.map((project, index) => (
-                        <EventCard key={index}  image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
-                    ))}
+                <div className='w-full'>
+                {skills1 && <div className= {`grid pt-6 pb-6 mt-10 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-x-14 2xl:gap-x-14 xl:gap-x-8 xs:gap-x-6 xxs:gap-x-6 3xl:px-14 2xl:px-14 xl:px-14 xs:px-0 xxs:px-0 3xl:gap-y-20 2xl:gap-y-20 xl:gap-y-20 xs:gap-y-8 xxs:gap-y-8`}>
+                        {projectDetails.map((project, index) => (
+                            <motion.div
+                            initial={{opacity: 0}}
+                            animate={{opacity: 1}}
+                            transition={{duration: 1, delay: index * 1.2, ease: "easeInOut"}}
+                            key={index}
+                            >
+                                <EventCard key={index}  image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
+                            </motion.div>
+                        ))}
+                    </div>}
                 </div>
                 <div className='w-full flex justify-center items-center p-5'>
                     <button className='uppercase rounded-full px-3 p-2 custom_bg_1 text-white 3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs' onClick={(e) => {showDisplay(); showMore1();} }>{displayShow}</button>
                 </div>
                 <div className= {` ${show1 ? "flex" : "hidden"} grid pt-6 pb-6 mt-10 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-x-14 2xl:gap-x-14 xl:gap-x-8 xs:gap-x-6 xxs:gap-x-6 3xl:px-14 2xl:px-14 xl:px-14 xs:px-0 xxs:px-0 3xl:gap-y-20 2xl:gap-y-20 xl:gap-y-20 xs:gap-y-8 xxs:gap-y-8`}>
-                    {projectDetails.map((project, index) => (
+                    {projectDetails2.map((project, index) => (
                         <EventCard key={index}  image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
                     ))}
+                    {/* {skills1 && <div className= {` ${show1 ? "flex" : "hidden"} grid pt-6 pb-6 mt-10 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-x-14 2xl:gap-x-14 xl:gap-x-8 xs:gap-x-6 xxs:gap-x-6 3xl:px-14 2xl:px-14 xl:px-14 xs:px-0 xxs:px-0 3xl:gap-y-20 2xl:gap-y-20 xl:gap-y-20 xs:gap-y-8 xxs:gap-y-8`}>
+                        {projectDetails.map((project, index) => (
+                            <motion.div
+                            initial={{opacity: 0}}
+                            animate={{opacity: 1}}
+                            transition={{duration: 1, delay: index * 0.5, ease: "easeInOut"}}
+                            key={index}
+                            >
+                                <EventCard key={index}  image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
+                            </motion.div>
+                        ))}
+                    </div>} */}
                 </div>
             </section>
         </section>
@@ -159,9 +219,9 @@ const EventCard = ({image, title, description, languages, link}) => {
         window.open(link, '_blank');
     };
     return (
-        <div className='event_shadow w-full h-full rounded-xl border-2 border-sky-500 p-4 px-6 hover:bg-gray-950 '>
+        <div className='event_shadow w-full h-full min_height_project rounded-xl border-2 border-sky-500 p-4 px-6 hover:bg-gray-950 '>
             <div className='w-full 3xl:h-2/6 2xl:3/6 xl:3/6'>
-                <img className='w-full h-full rounded' src={image} alt="tumbnail" />
+                <img className='w-full h-full rounded object-cover  ' src={image} alt="tumbnail" />
             </div>
             <div className='w-full '>
                 <h1 className='custom_font_color_1 tracking-wide pt-2 flex justify-center text-center capitalize font-medium 3xl:text-lg 2xl:text-md xl:text-md 3xl:px-4 2xl:px-2 xl:px-0 md:px-0 xs:px-0 xxs:px-0' >{title}</h1>

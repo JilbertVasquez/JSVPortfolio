@@ -2,6 +2,9 @@
 
 import TestDomeCertificate from './TestDomeCertificate.jsx';
 
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+
 function TestDome() {
 
     const testdomecert = [
@@ -73,12 +76,25 @@ function TestDome() {
         
     ]
 
+    const {ref: myRef1, inView: freecodecampShow} = useInView({ triggerOnce: true });
+
     return (
-        <section className=' mt-10 container flex justify-start p-5 gap-y-10 gap-x-5 flex-wrap lg:justify-start xxs:justify-center xxs:gap-y-4'>
-            {testdomecert.map((cert, index) => (
-                < TestDomeCertificate key={index} name={cert.name} link={cert.link} color={cert.color} />
-            ))}
+        <section ref={myRef1} className=' mt-10 container '>
             
+            {freecodecampShow && <div className='container  flex justify-start p-5 gap-y-10 gap-x-5 flex-wrap lg:justify-start xxs:justify-center xxs:gap-y-4'>
+                {testdomecert.map((cert, index) => (
+                    <motion.div
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 1, delay: index * 0.5, ease: "easeInOut"}}
+                    className="w-48 flex justify-center"
+                    key={index}
+                    >
+                        < TestDomeCertificate name={cert.name} link={cert.link} color={cert.color} />
+                    </motion.div>
+                ))}
+            </div>}
+
         </section>
     )
 }

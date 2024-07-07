@@ -101,8 +101,9 @@ const EventCardContainer = ({skillset}) => {
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{duration: 1, delay: index * 0.5, ease: "easeInOut"}}
+                    key={index}
                     >
-                        <EventCard key={index} name={skills.name} image={skills.image} />
+                        <EventCard name={skills.name} image={skills.image} />
                     </motion.div>
                 ))}
             </div>}
