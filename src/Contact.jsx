@@ -42,7 +42,7 @@ function Contact () {
                     <SocialMedia />
                 </div>
             </div>
-            <footer className='w-full flex justify-center items-center  3xl:h-10 2xl:h-10 xl:h-10 md:h-10 xs:h-10 xxs:h-10 '>
+            <footer className='w-full custom_bg_1 flex justify-center items-center  3xl:h-10 2xl:h-10 xl:h-10 md:h-10 xs:h-10 xxs:h-10 '>
                 <h1 className='uppercase text-white text-lg xxs:text-sm'>copyright &copy; 2024</h1>
             </footer>
         </section>

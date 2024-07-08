@@ -12,7 +12,7 @@ function Experience () {
     const {ref: myRef3, inView: experience3} = useInView({ triggerOnce: true });
 
     return (
-        <section className=" custom_bg_1 3xl h-4/5 flex justify-center items-center " id='Experience'>
+        <section className=" custom_bg_1 3xl flex justify-center items-center " id='Experience'>
             <section className='w-4/5 flex flex-col'>
                 <div className='w-full h-20 px-16 flex justify-center items-center'>
                     <h1 className='custom_font_color_1 tracking-wider text-start px-5 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl 3xl:pt-2 2xl:pt-0 xl:pt-0 ' >Experience</h1>

@@ -10,6 +10,7 @@ import tributepage from './assets/tributepage.png';
 import surveyform from './assets/surveyform.png';
 import technicaldocumentationpage from './assets/technicaldocumentationpage.png';
 import landingpage from './assets/landingpage.png';
+import personalportfoliowebpage from './assets/personalportfoliowebpage.png';
 
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
@@ -103,6 +104,13 @@ const projectDetails2 = [
         description:    `Freecodecamp Responsive Web Design Project. Build a technical documentation page to serve as instruction or reference for a topic.`,
         languages:      ['html', 'css'],
         link:           'https://codepen.io/JilbertVasquez/full/GREaPvK',
+    },
+    {
+        image:          personalportfoliowebpage,
+        title:          'Personal Portfolio Webpage (2021)',
+        description:    `Freecodecamp Responsive Web Design Project. Build your own personal portfolio page.`,
+        languages:      ['html', 'css'],
+        link:           'https://codepen.io/JilbertVasquez/full/KKvKPxq',
     },
 ];
 
