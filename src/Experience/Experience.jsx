@@ -26,7 +26,7 @@ function Experience() {
                                     animate={{ x: 0 }}
                                     transition={{ duration: 0.75, delay: 1.25, ease: "easeInOut" }}
                                 >
-                                    <EventCard title="Web Developer Intern" date="Feb 2024 - Apr 2024" companyname="ICT Services Alangilan Campus" location="BatStateU, Batangas City, Batangas" />
+                                    <EventCard title="Web Developer" date="Jul 2024 - Current" companyname="Panciteria Lido Chinese Cuisine Corp." location="West Triangle, Quezon City" />
                                 </motion.div>}
                             </div>
                             {experience1 && <motion.div
@@ -54,7 +54,7 @@ function Experience() {
                                     animate={{ x: 0 }}
                                     transition={{ duration: 0.75, delay: 1.75, ease: "easeInOut" }}
                                 >
-                                    <EventCard title="Freelance Developer" date="Oct 2022 - Feb 2024" companyname="Self-Employed" location="Batangas City, Batangas" />
+                                    <EventCard title="Web Developer Intern" date="Feb 2024 - Apr 2024" companyname="ICT Services Alangilan Campus" location="BatStateU, Batangas City, Batangas" />
                                 </motion.div>}
                             </div>
 
@@ -64,7 +64,7 @@ function Experience() {
                                     animate={{ x: 0 }}
                                     transition={{ duration: 0.75, delay: 2.25, ease: "easeInOut" }}
                                 >
-                                    <EventCard title="Freelance AutoCAD Drafter" date="Apr 2021 - May 2021" companyname="Self-Employed" location="Batangas City, Batangas" />
+                                    <EventCard title="Freelance Developer" date="Oct 2022 - Feb 2024" companyname="Self-Employed" location="Batangas City, Batangas" />
                                 </motion.div>}
                             </div>
                             {experience3 && <motion.div
@@ -73,11 +73,29 @@ function Experience() {
                                 transition={{ duration: 2, delay: 0.95, ease: "easeInOut" }}
                                 className=" overflow-hidden"
                             >
-                                <PillarBottom />
+                                <Pillar />
                             </motion.div>}
                             <div></div>
 
-
+                            <div></div>
+                            {experience2 && <motion.div
+                                initial={{ y: '-400%' }}
+                                animate={{ y: 0 }}
+                                transition={{ duration: 2.5, delay: 0.75, ease: "easeInOut" }}
+                                className=" overflow-hidden"
+                            >
+                                <PillarBottom />
+                            </motion.div>}
+                            <div ref={myRef2}>
+                                {experience2 && <motion.div
+                                    initial={{ x: '100%' }}
+                                    animate={{ x: 0 }}
+                                    transition={{ duration: 0.75, delay: 2.75, ease: "easeInOut" }}
+                                >
+                                    <EventCard title="Freelance AutoCAD Drafter" date="Apr 2021 - May 2021" companyname="Self-Employed" location="Batangas City, Batangas" />
+                                </motion.div>}
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
