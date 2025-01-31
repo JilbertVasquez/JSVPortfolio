@@ -22,7 +22,7 @@ function NavHeader () {
         <nav className='custom_bg_1 flex 3xl:flex-row 2xl:flex-row xl:flex-row md:flex-col xs:flex-col xxs:flex-col justify-around items-center 3xl:px-16 2xl:px-16 xl:px-16 md:px-4 xs:px-4 xxs:px-4 3xl:w-4/5 2xl:w-4/5 xl:w-4/5 md:w-full xs:w-full xxs:w-full'>
             <div className='3xl:w-1/4 2xl:w-1/4 xl:w-1/4 xs:w-full xxs:w-full h-14 flex justify-start items-center'>
                 <div className='h-10 flex items-center 3xl:w-36 2xl:w-36 xl:w-36 xs:w-2/4 xxs:w-2/4 justify-start 3xl:px-4 2xl:px-4 xl:px-4 md:px-4 xs:px-0 xxs:px-0'>
-                    <a href="#Home" className='custom_font_color_1 uppercase font-black hover:border-b-2 text-white tracking-widest 3xl:text-2xl 2xl:text-xl xl:text-xl md:text-2xl xs:text-2xl xxs:text-2xl' onClick={(e) => {scrollTo('Home', e);}}>JSV</a>
+                    <a href="#Home" className='custom_font_color_1 uppercase font-black hover:border-b-2 text-white tracking-widest 3xl:text-2xl 2xl:text-xl xl:text-xl md:text-2xl xs:text-2xl xxs:text-2xl' onClick={(e) => {scrollTo('Home', e);}}>JV</a>
                 </div>
                 <div className="text-4xl cursor-pointer block text-white w-2/4 3xl:hidden 2xl:hidden xl:hidden md:flex xs:flex xxs:flex justify-end">
                 <button name="menu" onClick={(e) => toggleMenu(e)}>
