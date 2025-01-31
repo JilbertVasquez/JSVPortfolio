@@ -220,20 +220,39 @@ const EventCard = ({image, title, description, languages, link}) => {
             <div className='w-full 3xl:h-2/6 2xl:3/6 xl:3/6'>
                 <img className='w-full h-full rounded object-cover  ' src={image} alt="tumbnail" />
             </div>
-            <div className='w-full '>
-                <h1 className='custom_font_color_1 tracking-wide pt-2 flex justify-center text-center capitalize font-medium 3xl:text-lg 2xl:text-md xl:text-md 3xl:px-4 2xl:px-2 xl:px-0 md:px-0 xs:px-0 xxs:px-0' >{title}</h1>
+            <div className='w-full'>
+                <h1 className='custom_font_color_1 tracking-wide pt-2 flex justify-center text-center capitalize font-medium 
+                    3xl:text-lg 2xl:text-md xl:text-md 
+                    3xl:px-4 2xl:px-2 xl:px-0 md:px-0 xs:px-0 xxs:px-0'>
+                    {title}
+                </h1>
             </div>
-            <div className='w-full '>
-                <p className='text-white pt-2 pb-2 indent-6 text-justify 3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs 3xl:px-2 2xl:px-2 xl:px-0 md:px-0 xs:px-0 xxs:px-0' >{description}</p>
-            </div>
-            <div className='w-full   grid  gap-x-2 px-2 gap-y-2 justify-center 3xl:grid-cols-4 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-3 xs:grid-cols-3 xxs:grid-cols-3'>
-                {languages.map((pl, index) => (
-                    <h4 key={index} className='text-white w-full p-0 rounded-full h-max justify-center items-center uppercase 3xl:text-xs 2xl:text-xs xl:text-xxs md:text-xxs xs:text-xxs xxs:text-xxs' style={{ backgroundColor: backgroundColorBasedOnLanguage(pl) }} >{pl}</h4>
-                ))}
 
+            <div className='w-full'>
+                <p className='text-white pt-2 pb-2 indent-6 text-justify 
+                    3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs
+                    3xl:px-2 2xl:px-2 xl:px-0 md:px-0 xs:px-0 xxs:px-0'>
+                    {description}
+                </p>
             </div>
-            <div className='w-full mt-5 '>
-                <button className='rounded-full px-3 p-2 custom_bg_1 text-white 3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs' onClick={() => navigateToLink(link)}>View Project</button>
+
+            <div className='w-full grid gap-x-2 px-2 gap-y-2 justify-center 
+                3xl:grid-cols-4 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-3 xs:grid-cols-3 xxs:grid-cols-3'>
+                {languages.map((pl, index) => (
+                    <h4 key={index} className='text-white text-center w-full p-0 rounded-full h-max justify-center items-center uppercase 
+                        3xl:text-xs 2xl:text-xs xl:text-xxs md:text-xxs xs:text-xxs xxs:text-xxs' 
+                        style={{ backgroundColor: backgroundColorBasedOnLanguage(pl) }}>
+                        {pl}
+                    </h4>
+                ))}
+            </div>
+
+            <div className='w-full mt-5 text-center'>
+                <button className='rounded-full px-3 p-2 custom_bg_1 text-white 
+                    3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs' 
+                    onClick={() => navigateToLink(link)}>
+                    View Project
+                </button>
             </div>
             
         </div>

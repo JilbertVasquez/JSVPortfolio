@@ -11,15 +11,15 @@ function Experience () {
     const {ref: myRef3, inView: experience3} = useInView({ triggerOnce: true });
 
     return (
-        <section className=" custom_bg_1 3xl flex justify-center items-center " id='Experience'>
+        <section className="custom_bg_1 flex justify-center items-center 3xl:flex" id='Experience'>
             <section className='w-4/5 flex flex-col'>
                 <div className='w-full h-20 px-16 flex justify-center items-center'>
-                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl 3xl:pt-2 2xl:pt-0 xl:pt-0 ' >Experience</h1>
+                    <h1 className='custom_font_color_1 tracking-wider text-start px-5 uppercase font-semibold 3xl:text-3xl 2xl:text-2xl xl:text-2xl md:text-2xl xs:text-xl xxs:text-xl 3xl:pt-2 2xl:pt-0 xl:pt-0'>Experience</h1>
                 </div>
 
                 <div className='flex flex-col gap-y-3 w-full my-5 pt-5 pb-5 3xl:mt-8 2xl:mt-10 xl:mt-10 3xl:px-16 2xl:px-16 xl:px-16 md:px-0 xs:px-0 xxs:px-0 overflow-hidden'>
                     <div>
-                        <div className=' grid gap-x-2 item-center 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-3 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-y-0 2xl:gap-y-0 xl:gap-y-0 md:gap-y-0 xs:gap-y-2 xxs:gap-y-1 overflow-hidden'>
+                        <div className='grid gap-x-2 item-center 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-3 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-y-0 2xl:gap-y-0 xl:gap-y-0 md:gap-y-0 xs:gap-y-2 xxs:gap-y-1 overflow-hidden'>
                             <div ref={myRef1}>
                                 {experience1 && <motion.div
                                 initial={{x: '-100%'}}
