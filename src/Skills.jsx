@@ -9,52 +9,52 @@ const Skillset = [
     {
         title: 'Web Development',
         languages: [
-            { name: 'html',             image: 'logos/html.png' },
-            { name: 'css',              image: 'logos/css.png' },
-            { name: 'javascript',       image: 'logos/js.png' },
-            { name: 'react',            image: 'logos/react.png' },
-            { name: 'php',              image: 'logos/php.png' },
-            { name: 'bootstrap',        image: 'logos/bootstrap.png' },
-            { name: 'django',           image: 'logos/django.png' },
-            { name: 'tailwind css',     image: 'logos/tailwind.png' },
-            { name: 'mysql',            image: 'logos/mysql.png' },
+            { name: 'html', image: 'logos/html.png' },
+            { name: 'css', image: 'logos/css.png' },
+            { name: 'javascript', image: 'logos/js.png' },
+            { name: 'react', image: 'logos/react.png' },
+            { name: 'php', image: 'logos/php.png' },
+            { name: 'bootstrap', image: 'logos/bootstrap.png' },
+            { name: 'django', image: 'logos/django.png' },
+            { name: 'tailwind css', image: 'logos/tailwind.png' },
+            { name: 'mysql', image: 'logos/mysql.png' },
         ],
     },
     {
         title: 'Application Development',
         languages: [
-            { name: 'python tkinter',   image: 'logos/tkinter.png' },
-            { name: 'java',             image: 'logos/java.png' },
-            { name: 'c++',              image: 'logos/c.png' },
-            { name: 'mysql',            image: 'logos/mysql.png' },
-            { name: 'txt',              image: 'logos/file.png' },
-            { name: 'excel',            image: 'logos/excel.png' },
+            { name: 'python tkinter', image: 'logos/tkinter.png' },
+            { name: 'java', image: 'logos/java.png' },
+            { name: 'c++', image: 'logos/c.png' },
+            { name: 'mysql', image: 'logos/mysql.png' },
+            { name: 'txt', image: 'logos/file.png' },
+            { name: 'excel', image: 'logos/excel.png' },
         ],
     },
     {
         title: 'Tools / Platforms',
         languages: [
-            { name: 'vscode',           image: 'logos/vscode.png' },
-            { name: 'git',              image: 'logos/git.png' },
-            { name: 'github',           image: 'logos/githublogo.png' },
-            { name: 'netbeans',         image: 'logos/netbeans3.png' },
-            { name: 'netlify',         image: 'logos/netlify.png' },
+            { name: 'vscode', image: 'logos/vscode.png' },
+            { name: 'git', image: 'logos/git.png' },
+            { name: 'github', image: 'logos/githublogo.png' },
+            { name: 'netbeans', image: 'logos/netbeans3.png' },
+            { name: 'netlify', image: 'logos/netlify.png' },
         ],
     },
     {
         title: 'Others',
         languages: [
-            { name: 'autocad',          image: 'logos/cad.png' },
-            { name: 'circuits',         image: 'logos/circuit.png' },
-            { name: 'networking',       image: 'logos/network.png' },
-            { name: 'vegas pro',        image: 'logos/v.png' },
-            { name: 'circuitverse',        image: 'logos/circuitverse.png' },
-            { name: 'tinkercad',        image: 'logos/tinkercad_logo.png' },
+            { name: 'autocad', image: 'logos/cad.png' },
+            { name: 'circuits', image: 'logos/circuit.png' },
+            { name: 'networking', image: 'logos/network.png' },
+            { name: 'vegas pro', image: 'logos/v.png' },
+            { name: 'circuitverse', image: 'logos/circuitverse.png' },
+            { name: 'tinkercad', image: 'logos/tinkercad_logo.png' },
         ],
     },
 ];
 
-function Skills () {
+function Skills() {
 
     return (
         <section className=" custom_bg_1 3xl h-max flex justify-center items-center" id='Skills'>
@@ -66,24 +66,24 @@ function Skills () {
                 {Skillset.map((skill, index) => (
                     <EventCardContainer key={index} skillset={skill} />
                 ))}
-                
+
             </section>
-            
+
         </section>
     )
 }
 
-const EventCard = ({name, image}) => {
+const EventCard = ({ name, image }) => {
     return (
         <div className='flex flex-col items-center justify-center rounded-xl custom_bg_1 skill_shadow 
             3xl:w-32 2xl:w-32 xl:w-32 md:w-28 xs:w-24 xxs:w-20 
             3xl:p-5 2xl:p-5 xl:p-5 xs:pt-4 xxs:pt-4 
             hover:scale-105 overflow-hidden'>
-            
+
             <img className='h-full 
-                3xl:w-full 2xl:w-4/5 xl:w-4/5 md:w-3/5 xs:w-3/5 xxs:w-3/5' 
+                3xl:w-full 2xl:w-4/5 xl:w-4/5 md:w-3/5 xs:w-3/5 xxs:w-3/5'
                 src={image} alt="tumbnail" />
-                
+
             <h3 className='text-white uppercase h-14 flex items-center justify-center 
                 3xl:pt-2 2xl:pt-2 xl:pt-2 md:pt-0 xs:pt-0 xxs:pt-0
                 3xl:text-sm 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xxs'>
@@ -93,8 +93,8 @@ const EventCard = ({name, image}) => {
     )
 }
 
-const EventCardContainer = ({skillset}) => {
-    const {ref: myRef1, inView: skills1} = useInView({ triggerOnce: true });
+const EventCardContainer = ({ skillset }) => {
+    const { ref: myRef1, inView: skills1 } = useInView({ triggerOnce: true });
 
     return (
         <div className='w-full flex flex-col'>
@@ -109,10 +109,10 @@ const EventCardContainer = ({skillset}) => {
             {skills1 && <div className='pt-8 w-full  pb-10 flex flex-wrap justify-center items-center 3xl:px-24 2xl:px-24 xl:px-6 md:px-0 xs:px-0 xxs:px-0 3xl:gap-10 2xl:gap-10 xl:gap-6 md:gap-3 xs:gap-2 xxs:gap-4 overflow-hidden'>
                 {skillset.languages.map((skills, index) => (
                     <motion.div
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{duration: 1, delay: index * 0.5, ease: "easeInOut"}}
-                    key={index}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: index * 0.5, ease: "easeInOut" }}
+                        key={index}
                     >
                         <EventCard name={skills.name} image={skills.image} />
                     </motion.div>

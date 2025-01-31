@@ -9,7 +9,7 @@ import Certification from './Certification.jsx';
 import Contact from './Contact.jsx'
 import Loading from './Loading.jsx';
 
-function Container () {
+function Container() {
     const [isLoading, setIsLoading] = React.useState(true);
 
     // Simulate loading
@@ -24,7 +24,7 @@ function Container () {
         return <Loading />; // Show the loading animation
     }
     return (
-        
+
         <div className="w-full h-screen">
 
             <Home />

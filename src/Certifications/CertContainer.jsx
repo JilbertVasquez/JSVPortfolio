@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function CertContainer ({name, image, link}) {
+function CertContainer({ name, image, link }) {
 
     return (
         <div className="h-72 px-5 p-2 w-full lg:w-full md:w-2/4 xxs:w-full lg:h-72 xxs:h-60">

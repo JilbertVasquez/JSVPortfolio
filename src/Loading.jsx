@@ -12,14 +12,14 @@ const Loading = () => {
         }
     };
 
-return (
-    <div className='w-full h-screen flex justify-center items-center custom_bg_1'>
-        <Lottie 
-            options={defaultOptions}
-            height={300}
-            width={300}
-        />
-    </div>
+    return (
+        <div className='w-full h-screen flex justify-center items-center custom_bg_1'>
+            <Lottie
+                options={defaultOptions}
+                height={300}
+                width={300}
+            />
+        </div>
     );
 };
 

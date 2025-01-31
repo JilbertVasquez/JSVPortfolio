@@ -4,11 +4,11 @@ import './custom.css';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
-function Experience () {
+function Experience() {
 
-    const {ref: myRef1, inView: experience1} = useInView({ triggerOnce: true });
-    const {ref: myRef2, inView: experience2} = useInView({ triggerOnce: true });
-    const {ref: myRef3, inView: experience3} = useInView({ triggerOnce: true });
+    const { ref: myRef1, inView: experience1 } = useInView({ triggerOnce: true });
+    const { ref: myRef2, inView: experience2 } = useInView({ triggerOnce: true });
+    const { ref: myRef3, inView: experience3 } = useInView({ triggerOnce: true });
 
     return (
         <section className="custom_bg_1 flex justify-center items-center 3xl:flex" id='Experience'>
@@ -22,18 +22,18 @@ function Experience () {
                         <div className='grid gap-x-2 item-center 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-3 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-y-0 2xl:gap-y-0 xl:gap-y-0 md:gap-y-0 xs:gap-y-2 xxs:gap-y-1 overflow-hidden'>
                             <div ref={myRef1}>
                                 {experience1 && <motion.div
-                                initial={{x: '-100%'}}
-                                animate={{x: 0}}
-                                transition={{duration: 0.75, delay: 1.25, ease: "easeInOut"}}
-                                > 
+                                    initial={{ x: '-100%' }}
+                                    animate={{ x: 0 }}
+                                    transition={{ duration: 0.75, delay: 1.25, ease: "easeInOut" }}
+                                >
                                     <EventCard title="Web Developer Intern" date="Feb 2024 - Apr 2024" companyname="ICT Services Alangilan Campus" location="BatStateU, Batangas City, Batangas" />
                                 </motion.div>}
                             </div>
                             {experience1 && <motion.div
-                            initial={{y: '-100%'}}
-                            animate={{y: 0}}
-                            transition={{duration: 1, delay: 1, ease: "easeInOut"}}
-                            className=" overflow-hidden"
+                                initial={{ y: '-100%' }}
+                                animate={{ y: 0 }}
+                                transition={{ duration: 1, delay: 1, ease: "easeInOut" }}
+                                className=" overflow-hidden"
                             >
                                 <PillarTop />
                             </motion.div>}
@@ -41,49 +41,49 @@ function Experience () {
 
                             <div></div>
                             {experience2 && <motion.div
-                            initial={{y: '-200%'}}
-                            animate={{y: 0}}
-                            transition={{duration: 1.5, delay: 1.10, ease: "easeInOut"}}
-                            className=" overflow-hidden"
+                                initial={{ y: '-200%' }}
+                                animate={{ y: 0 }}
+                                transition={{ duration: 1.5, delay: 1.10, ease: "easeInOut" }}
+                                className=" overflow-hidden"
                             >
                                 <Pillar />
                             </motion.div>}
                             <div ref={myRef2}>
                                 {experience2 && <motion.div
-                                initial={{x: '100%'}}
-                                animate={{x: 0}}
-                                transition={{duration: 0.75, delay: 1.75, ease: "easeInOut"}}
-                                > 
+                                    initial={{ x: '100%' }}
+                                    animate={{ x: 0 }}
+                                    transition={{ duration: 0.75, delay: 1.75, ease: "easeInOut" }}
+                                >
                                     <EventCard title="Freelance Developer" date="Oct 2022 - Feb 2024" companyname="Self-Employed" location="Batangas City, Batangas" />
                                 </motion.div>}
                             </div>
 
                             <div ref={myRef3}>
                                 {experience3 && <motion.div
-                                initial={{x: '-100%'}}
-                                animate={{x: 0}}
-                                transition={{duration: 0.75, delay: 2.25, ease: "easeInOut"}}
-                                > 
+                                    initial={{ x: '-100%' }}
+                                    animate={{ x: 0 }}
+                                    transition={{ duration: 0.75, delay: 2.25, ease: "easeInOut" }}
+                                >
                                     <EventCard title="Freelance AutoCAD Drafter" date="Apr 2021 - May 2021" companyname="Self-Employed" location="Batangas City, Batangas" />
                                 </motion.div>}
                             </div>
                             {experience3 && <motion.div
-                            initial={{y: '-300%'}}
-                            animate={{y: 0}}
-                            transition={{duration: 2, delay: 0.95, ease: "easeInOut"}}
-                            className=" overflow-hidden"
+                                initial={{ y: '-300%' }}
+                                animate={{ y: 0 }}
+                                transition={{ duration: 2, delay: 0.95, ease: "easeInOut" }}
+                                className=" overflow-hidden"
                             >
                                 <PillarBottom />
                             </motion.div>}
                             <div></div>
-                            
-                            
+
+
                         </div>
                     </div>
                 </div>
 
             </section>
-            
+
         </section>
     )
 }
@@ -112,7 +112,7 @@ const PillarBottom = () => {
     )
 }
 
-const EventCard = ({title, date, companyname, location}) => {
+const EventCard = ({ title, date, companyname, location }) => {
     return (
         <div className='flex flex-col rounded-xl p-4 items-start w-full'>
             <h1 className='custom_font_color_1 tracking-wider text-start pt-2 pb-2 capitalize font-semibold 3xl:text-2xl 2xl:text-xl xl:text-xl xs:text-base xxs:text-base'>{title}</h1>

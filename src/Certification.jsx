@@ -7,8 +7,8 @@ import SoloLearn from "./Certifications/SoloLearn";
 import TestDome from "./Certifications/TestDome";
 import Udemy from "./Certifications/Udemy";
 
-function Certification () {
-    
+function Certification() {
+
     return (
         <section className="cert-con custom_bg_2 min-h-cert flex justify-center items-start pt-10" id="Certifications">
             <section className="w-4/5 h-full ">
