@@ -1,4 +1,4 @@
-import "./custom.css";
+import "../custom.css";
 import Navigate from "./Navigation";
 import { useState } from "react";
 import "boxicons/css/boxicons.min.css";

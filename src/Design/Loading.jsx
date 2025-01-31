@@ -1,6 +1,6 @@
 import Lottie from 'react-lottie';
-import airplane from '../public/airplane.json';
-import './custom.css';
+import airplane from '../../public/airplane.json';
+import '../custom.css';
 
 const Loading = () => {
     const defaultOptions = {

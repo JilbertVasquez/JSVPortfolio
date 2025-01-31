@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './custom.css';
+import '../custom.css';
 
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';

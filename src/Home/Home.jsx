@@ -1,9 +1,9 @@
 import { Typewriter, Cursor } from 'react-simple-typewriter';
-import './custom.css';
-import jil1 from './assets/jil1.jpg';
-import NavHeader from './NavHeader';
+import '../custom.css';
+import jil1 from '../assets/jil1.jpg';
+import NavHeader from '../Nav/NavHeader';
 
-import mycv from './assets/Vasquez_Jilbert_S_Resume.pdf';
+import mycv from '../assets/Vasquez_Jilbert_S_Resume.pdf';
 
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';

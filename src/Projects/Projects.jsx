@@ -1,22 +1,22 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import Portfolio from './assets/Portfolio.png';
-import DFSLogin from './assets/DFSLogin.png';
-import BatStateUCampusMap from './assets/BatStateUCampusMap.png';
-import Vault from './assets/Vault.png';
-import MuseumRevive from './assets/MuseumRevive.png';
-import CelestialHotel from './assets/CelestialHotel.png';
+import Portfolio from '../assets/Portfolio.png';
+import DFSLogin from '../assets/DFSLogin.png';
+import BatStateUCampusMap from '../assets/BatStateUCampusMap.png';
+import Vault from '../assets/Vault.png';
+import MuseumRevive from '../assets/MuseumRevive.png';
+import CelestialHotel from '../assets/CelestialHotel.png';
 
-import tributepage from './assets/tributepage.png';
-import surveyform from './assets/surveyform.png';
-import technicaldocumentationpage from './assets/technicaldocumentationpage.png';
-import landingpage from './assets/landingpage.png';
-import personalportfoliowebpage from './assets/personalportfoliowebpage.png';
+import tributepage from '../assets/tributepage.png';
+import surveyform from '../assets/surveyform.png';
+import technicaldocumentationpage from '../assets/technicaldocumentationpage.png';
+import landingpage from '../assets/landingpage.png';
+import personalportfoliowebpage from '../assets/personalportfoliowebpage.png';
 
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
-import './custom.css';
+import '../custom.css';
 
 const projectDetails = [
     {

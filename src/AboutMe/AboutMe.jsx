@@ -1,4 +1,4 @@
-import Animation from './Animation.jsx';
+import Animation from '../Design/Animation.jsx';
 
 import codingperson from '/public/codingperson.json';
 

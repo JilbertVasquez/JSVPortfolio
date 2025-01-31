@@ -1,7 +1,7 @@
-import Animation from './Animation.jsx';
-import laptop from '../public/laptop.json';
+import Animation from '../Design/Animation.jsx';
+import laptop from '../../public/laptop.json';
 
-import './custom.css';
+import '../custom.css';
 
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';

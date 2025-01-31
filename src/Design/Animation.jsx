@@ -36,7 +36,7 @@ const Animation = ({ animationData }) => {
 };
 
 Animation.propTypes = {
-    animationData: PropTypes.string.isRequired
+    animationData: PropTypes.any.isRequired
 }
 
 export default Animation;
