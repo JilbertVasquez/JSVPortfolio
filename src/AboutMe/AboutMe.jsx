@@ -21,9 +21,14 @@ function AboutMe() {
                                 animate={{ x: 0 }}
                                 transition={{ duration: 1.5, delay: 0.3 }}
                             >
-                                I am a graduating Computer Engineering student at Batangas State University in August 2024.
+                                {/* I am a graduating Computer Engineering student at Batangas State University in August 2024.
                                 I am a shy yet talented engineer passionate about software development, art, and technology.
-                                I use my creativity to create designs and strong analytical skills to tackle the logical aspects of applications.
+                                I use my creativity to create designs and strong analytical skills to tackle the logical aspects of applications. */}
+
+                                I graduated from Batangas State University in computer engineering in August 2024. 
+                                As a passionate and creative software developer, I bring artistic and analytical skills to my work, 
+                                tackling challenges in design and logic with equal enthusiasm.
+
                             </motion.p>}
                             <br />
                             {myElementIsVisible && <motion.p className="text-white text-justify leading-8 3xl:indent-14 2xl:indent-14 xl:indent-10 md:indent-10 xs:indent-8 xxs:indent-6 3xl:text-xl 2xl:text-lg xl:text-lg md:text-lg xs:text-sm xxs:text-sm"
@@ -31,8 +36,13 @@ function AboutMe() {
                                 animate={{ x: 0 }}
                                 transition={{ duration: 1.5, delay: 0.5, ease: "easeInOut" }}
                             >
-                                Residing in Batangas City, Batangas, I am prepared to take on challenging software development projects.
-                                I am versatile, offering support in networks, a solid foundation in hardware, and full-stack capabilities in software.
+                                {/* Residing in Batangas City, Batangas, I am prepared to take on challenging software development projects.
+                                I am versatile, offering support in networks, a solid foundation in hardware, and full-stack capabilities in software. */}
+
+                                I&#39;m currently working in the field and I still grasp any chance to develop. 
+                                I have experience with full-stack apps, hardware, networks, and software development. 
+                                As my career develops, I am thrilled to take on new challenges and learn more. 
+                                
                             </motion.p>}
                         </div>
                         <div className="flex justify-center items-center 3xl:w-1/3 2xl:w-1/3 xl:w-1/3 md:w-full xs:w-full xxs:w-full 3xl:h-2/3 2xl:h-2/3 xl:h-2/3 md:h-2/4 sm:h-2/4 xs:h-1/3 xxs:h-1/3 pt-0 xxs:pt-5 pb-0 xxs:pb-5"
