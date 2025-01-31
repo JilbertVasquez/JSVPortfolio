@@ -1,5 +1,4 @@
-import React, {useRef} from 'react';
-
+import PropTypes from 'prop-types';
 import './custom.css';
 
 import { motion } from "framer-motion";
@@ -122,6 +121,13 @@ const EventCard = ({title, date, companyname, location}) => {
             <h1 className='text-white text-start 3xl:text-xl 2xl:text-lg xl:text-sm md:text-sm xs:text-sm xxs:text-sm'>{location}</h1>
         </div>
     )
+}
+
+EventCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    companyname: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
 }
 
 export default Experience

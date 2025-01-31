@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 function CertContainer ({name, image, link}) {
 
@@ -9,6 +10,12 @@ function CertContainer ({name, image, link}) {
             </a>
         </div>
     )
+}
+
+CertContainer.propTypes = {
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
 }
 
 export default CertContainer

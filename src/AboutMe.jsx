@@ -1,4 +1,3 @@
-import React, {useRef} from 'react';
 import Animation from './Animation.jsx';
 import codingperson from '/public/codingperson.json';
 
@@ -22,7 +21,7 @@ function AboutMe () {
                             transition={{duration: 1.5, delay: 0.3}}
                             >
                                 I am a graduating Computer Engineering student at Batangas State University in August 2024. 
-                                I'm a shy yet talented engineer passionate about software development, art, and technology. 
+                                I am a shy yet talented engineer passionate about software development, art, and technology. 
                                 I use my creativity to create designs and strong analytical skills to tackle the logical aspects of applications.
                             </motion.p>}
                             <br />

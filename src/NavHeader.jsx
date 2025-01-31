@@ -1,7 +1,6 @@
-// import React from 'react';
 import './custom.css';
 import Navigate from './Navigation';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import 'boxicons/css/boxicons.min.css';
 
 function NavHeader () {
@@ -14,7 +13,7 @@ function NavHeader () {
 
     const scrollTo = (id, e) => {
         e.preventDefault();
-        Navigate(id, e); // Replace 'aboutMeSection' with the actual ID of your section in aboutme.jsx
+        Navigate(id);
         
     };
     
@@ -32,7 +31,6 @@ function NavHeader () {
             </div>
 
             <div className={`navheader columns-6 justify-between items-center gap-y-10 3xl:py-0 2xl:py-0 xl:py-0 md:py-8 xs:py-8 xxs:py-8 3xl:flex 2xl:flex xl:flex ${navBar ? "md:flex xs:flex xxs:flex" : "md:hidden xs:hidden xxs:hidden"} 3xl:flex-row 2xl:flex-row xl:flex-row md:flex-col xs:flex-col xxs:flex-col 3xl:w-3/4 2xl:w-3/4 xl:w-3/4 md:w-full xs:w-full xxs:w-full custom_bg_1 transition-all ease-in duration-500`}>
-                    {/* <div className='h-10 w-10 p-2 custom_bg_1 flex justify-center items-center'></div> */}
 
                     <div className='h-10 w-38 p-2 custom_bg_1 flex justify-center items-center'>
                         <a href="#AboutMe" className='uppercase hover:border-b-2 border-sky-500 tracking-widest 3xl:text-xl 2xl:text-base xl:text-base md:text-2xl xs:text-xl xxs:text-xl text-white' onClick={(e) => {scrollTo('AboutMe', e); toggleMenu();}}>About Me</a>

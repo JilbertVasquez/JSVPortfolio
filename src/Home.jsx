@@ -1,10 +1,8 @@
 // import React from 'react';
 import { Typewriter, Cursor } from 'react-simple-typewriter';
 import './custom.css';
-import Navigate from './Navigation';
 import jil1 from './assets/jil1.jpg';
 import NavHeader from './NavHeader';
-import React, { useState } from 'react';
 
 import mycv from './assets/Vasquez_Jilbert_S_Resume.pdf';
 
@@ -12,16 +10,6 @@ import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
 function Home () {
-    // const {text} = useTypewriter({
-    //     words: ['Computer Engineer', 'Web Developer', "Future Software Engineer"],
-    //     loop: true,
-    //     deleteSpeed: 50,
-    //     typeSpeed: 100,
-    // });
-
-    const scrollTo = (id, e) => {
-        Navigate(id, e); // Replace 'aboutMeSection' with the actual ID of your section in aboutme.jsx
-    };
 
     const {ref: myRef1, inView: hello} = useInView({ triggerOnce: true });
 
@@ -47,7 +35,7 @@ function Home () {
                             initial={{y: '100%', opacity: 0}}
                             animate={{y: '0', opacity: 1}}
                             transition={{duration: 1, delay: 0.5, ease: "easeInOut"}}>
-                                <h1 className=' custom_font_color_1 capitalize font-medium pt-5 pb-1 3xl:text-3xl 2xl:text-3xl xl:text-2xl md:text-2xl xs:text-xl'>Hello World, I'm</h1>
+                                <h1 className=' custom_font_color_1 capitalize font-medium pt-5 pb-1 3xl:text-3xl 2xl:text-3xl xl:text-2xl md:text-2xl xs:text-xl'>Hello World, I&#39;m</h1>
                         </motion.div>}
                         {hello && <motion.div
                             initial={{opacity: 0}}

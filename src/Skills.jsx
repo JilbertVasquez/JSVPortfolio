@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 import './custom.css';
 
@@ -66,9 +66,7 @@ function Skills () {
                 {Skillset.map((skill, index) => (
                     <EventCardContainer key={index} skillset={skill} />
                 ))}
-
-                {/* <EventCardContainer /> */}
-                {/* <EventCardContainer /> */}
+                
             </section>
             
         </section>
@@ -91,9 +89,6 @@ const EventCardContainer = ({skillset}) => {
         <div className='w-full flex flex-col'>
             <div ref={myRef1} className='w-full h-14  flex mt-12 justify-center items-center 3xl:px-14 2xl:px-14 xl:px-14 md:px-0 xs:px-0 xxs:px-0'>
                 <h2 className='text-white tracking-wider w-full text-center uppercase font-semibold 3xl:text-lg 2xl:text-lg xl:text-lg md:text-lg xs:text-base xxs:text-base' >{skillset.title}</h2>
-                {/* {skillset.map((skill, index) => (
-                    <h2 key={index} className='text-white tracking-wider text-start px-5 text-lg uppercase font-semibold' >{skill.title}</h2>
-                ))} */}
             </div>
             {skills1 && <div className='pt-8 w-full  pb-10 flex flex-wrap justify-center items-center 3xl:px-24 2xl:px-24 xl:px-6 md:px-0 xs:px-0 xxs:px-0 3xl:gap-10 2xl:gap-10 xl:gap-6 md:gap-3 xs:gap-2 xxs:gap-4 overflow-hidden'>
                 {skillset.languages.map((skills, index) => (
@@ -110,6 +105,23 @@ const EventCardContainer = ({skillset}) => {
         </div>
     )
 }
+
+EventCard.propTypes = {
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+};
+
+EventCardContainer.propTypes = {
+    skillset: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        languages: PropTypes.arrayOf(
+            PropTypes.shape({
+                name: PropTypes.string.isRequired,
+                image: PropTypes.string.isRequired,
+            })
+        ).isRequired,
+    }).isRequired,
+};
 
 
 export default Skills

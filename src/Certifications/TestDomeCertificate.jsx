@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 
 function TestDomeCertificate({name, link, color}) {
     useEffect(() => {
@@ -20,6 +21,12 @@ function TestDomeCertificate({name, link, color}) {
         </div>
         
     );
+}
+
+TestDomeCertificate.propTypes = {
+    name: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
 }
 
 export default TestDomeCertificate;

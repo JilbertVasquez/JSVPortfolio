@@ -1,5 +1,4 @@
-
-import React, {useRef, useEffect} from 'react';
+import PropTypes from 'prop-types';
 import Lottie from 'react-lottie';
 // import animationData from './path/to/your/animation.json'; // Adjust the path to your animation JSON file
 
@@ -16,27 +15,7 @@ const Animation = ({animationData}) => {
         }
     };
 
-    // const myRef = useRef(null);
-
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver((entries) => {
-    //         const entry = entries[0];
-    //         if (entry.isIntersecting) {
-    //         }
-    //     });
-
-    //     if (myRef.current) {
-    //         observer.observe(myRef.current);
-    //     }
-
-    //     return () => {
-    //         if (myRef.current) {
-    //             observer.unobserve(myRef.current);
-    //         }
-    //     };
-    // }, []);
-
-    const {ref: myRef, inView: myElementIsVisible} = useInView({ triggerOnce: true });
+const {ref: myRef, inView: myElementIsVisible} = useInView({ triggerOnce: true });
 
 return (
     <div ref={myRef} className='w-full h-full flex justify-center items-center overflow-hidden'>
@@ -56,5 +35,9 @@ return (
     </div>
     );
 };
+
+Animation.propTypes = {
+    animationData: PropTypes.string.isRequired
+}
 
 export default Animation;

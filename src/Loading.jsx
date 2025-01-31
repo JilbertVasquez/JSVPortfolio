@@ -1,17 +1,6 @@
-import React from 'react';
 import Lottie from 'react-lottie';
 import airplane from '../public/airplane.json';
 import './custom.css';
-
-// const Loading = () => {
-//     return (
-//         <div className="loading-container w-full h-screen flex justify-center items-center">
-//             <Lottie animationData={airplane} loop={true} />
-//         </div>
-//     );
-// };
-
-// 
 
 const Loading = () => {
     const defaultOptions = {

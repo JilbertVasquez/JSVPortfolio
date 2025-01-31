@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Animation from './Animation.jsx';
 import laptop from '../public/laptop.json';
 
@@ -83,13 +81,7 @@ const SocialMedia = () => {
 
     return (
         <div ref={myRef1} className='w-full h-full bg-white '>
-            {/* {Accounts.map((socmed, index) => (
-                <div className='rounded-full h-2/4' key={index}>
-                    <a className='h-full w-full' href={socmed.link} target="_blank" rel="noopener noreferrer">
-                        <img className='w-full h-full socmed' src={socmed.image} alt={socmed.socialmedia} />
-                    </a>
-                </div>
-            ))} */}
+
             {socMed && <div className='w-full h-full flex justify-center items-center gap-x-10 overflow-hidden'>
                 {Accounts.map((socmed, index) => (
                     <motion.div
