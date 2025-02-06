@@ -9,14 +9,19 @@ const Skillset = [
     {
         title: 'Web Development',
         languages: [
-            { name: 'html', image: 'logos/html.png' },
-            { name: 'css', image: 'logos/css.png' },
-            { name: 'javascript', image: 'logos/js.png' },
+            // { name: 'html', image: 'logos/html.png' },
+            // { name: 'css', image: 'logos/css.png' },
+            // { name: 'javascript', image: 'logos/js.png' },
+            { name: 'typescript', image: 'logos/typescript.png' },
+            { name: 'angular', image: 'logos/angular_logo.png' },
             { name: 'react', image: 'logos/react.png' },
-            { name: 'php', image: 'logos/php.png' },
+            // { name: 'php', image: 'logos/php.png' },
             { name: 'bootstrap', image: 'logos/bootstrap.png' },
-            { name: 'django', image: 'logos/django.png' },
             { name: 'tailwind css', image: 'logos/tailwind.png' },
+            { name: 'asp .net core', image: 'logos/net.png' },
+            { name: 'django', image: 'logos/django.png' },
+            { name: 'auth0', image: 'logos/auth0.png' },
+            { name: 'jwt tokens', image: 'logos/jwt_logov2.png' },
             { name: 'mysql', image: 'logos/mysql.png' },
         ],
     },
@@ -35,6 +40,7 @@ const Skillset = [
         title: 'Tools / Platforms',
         languages: [
             { name: 'vscode', image: 'logos/vscode.png' },
+            { name: 'postman', image: 'logos/postman.png' },
             { name: 'git', image: 'logos/git.png' },
             { name: 'github', image: 'logos/githublogo.png' },
             { name: 'netbeans', image: 'logos/netbeans3.png' },
@@ -84,7 +90,7 @@ const EventCard = ({ name, image }) => {
                 3xl:w-full 2xl:w-4/5 xl:w-4/5 md:w-3/5 xs:w-3/5 xxs:w-3/5'
                 src={image} alt="tumbnail" />
 
-            <h3 className='text-white uppercase h-14 flex items-center justify-center 
+            <h3 className='text-white uppercase h-14 flex items-center justify-center text-center
                 3xl:pt-2 2xl:pt-2 xl:pt-2 md:pt-0 xs:pt-0 xxs:pt-0
                 3xl:text-sm 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xxs'>
                 {name}
