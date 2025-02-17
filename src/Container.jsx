@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Home from './Home.jsx'
-import AboutMe from './AboutMe.jsx'
-import Experience from './Experience.jsx'
-import Projects from './Projects.jsx'
-import Skills from './Skills.jsx'
-import Certification from './Certification.jsx';
-import Contact from './Contact.jsx'
-import Loading from './Loading.jsx';
+import Home from './Home/Home.jsx'
+import AboutMe from './AboutMe/AboutMe.jsx'
+import Experience from './Experience/Experience.jsx'
+import Projects from './Projects/Projects.jsx'
+import Skills from './Skills/Skills.jsx'
+import Certification from './Certifications/Certification.jsx';
+import Contact from './Contact/Contact.jsx'
+import Loading from './Design/Loading.jsx';
 
-function Container () {
+function Container() {
     const [isLoading, setIsLoading] = React.useState(true);
 
     // Simulate loading
@@ -24,7 +24,7 @@ function Container () {
         return <Loading />; // Show the loading animation
     }
     return (
-        
+
         <div className="w-full h-screen">
 
             <Home />

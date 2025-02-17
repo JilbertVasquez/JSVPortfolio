@@ -1,15 +1,14 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './custom.css';
+import '../custom.css';
 
-import Layout from "./Certifications/Layout";
-import FreeCodeCamp from "./Certifications/FreeCodeCamp";
-import SoloLearn from "./Certifications/SoloLearn";
-import TestDome from "./Certifications/TestDome";
-import Udemy from "./Certifications/Udemy";
+import Layout from "./Layout";
+import FreeCodeCamp from "./FreeCodeCamp";
+import SoloLearn from "./SoloLearn";
+import TestDome from "./TestDome";
+import Udemy from "./Udemy";
 
-function Certification () {
-    
+function Certification() {
+
     return (
         <section className="cert-con custom_bg_2 min-h-cert flex justify-center items-start pt-10" id="Certifications">
             <section className="w-4/5 h-full ">
