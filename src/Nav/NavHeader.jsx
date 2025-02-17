@@ -26,7 +26,7 @@ function NavHeader() {
                             scrollTo("Home", e);
                         }}
                     >
-                        JSV
+                        JV
                     </a>
                 </div>
                 <div className="text-4xl cursor-pointer block text-white w-2/4 3xl:hidden 2xl:hidden xl:hidden md:flex xs:flex xxs:flex justify-end">
