@@ -25,9 +25,9 @@ function AboutMe() {
                                 I am a shy yet talented engineer passionate about software development, art, and technology.
                                 I use my creativity to create designs and strong analytical skills to tackle the logical aspects of applications. */}
 
-                                I graduated from Batangas State University in computer engineering in August 2024. 
-                                As a passionate and creative software developer, I bring artistic and analytical skills to my work, 
-                                tackling challenges in design and logic with equal enthusiasm.
+                                I graduated with a Bachelor&apos;s in Computer Engineering from Batangas State University in August 2024.
+                                 As a passionate and creative software developer, I bring artistic and analytical skills to my work, 
+                                 tackling challenges in design and logic with equal enthusiasm.
 
                             </motion.p>}
                             <br />
