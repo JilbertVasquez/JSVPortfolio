@@ -25,9 +25,11 @@ function AboutMe() {
                                 I am a shy yet talented engineer passionate about software development, art, and technology.
                                 I use my creativity to create designs and strong analytical skills to tackle the logical aspects of applications. */}
 
-                                I graduated with a Bachelor&apos;s in Computer Engineering from Batangas State University in August 2024.
+                                {/* I graduated with a Bachelor&apos;s in Computer Engineering from Batangas State University in August 2024.
                                  As a passionate and creative software developer, I bring artistic and analytical skills to my work, 
-                                 tackling challenges in design and logic with equal enthusiasm.
+                                 tackling challenges in design and logic with equal enthusiasm. */}
+
+                                 I graduated with a Bachelor&#39;s in Computer Engineering from Batangas State University in August 2024. I’ve been working in the industry for about a year now as a web developer, learning a great deal, building real projects, and steadily advancing my skills.
 
                             </motion.p>}
                             <br />
@@ -39,9 +41,28 @@ function AboutMe() {
                                 {/* Residing in Batangas City, Batangas, I am prepared to take on challenging software development projects.
                                 I am versatile, offering support in networks, a solid foundation in hardware, and full-stack capabilities in software. */}
 
-                                I&#39;m currently working in the field and I still grasp any chance to develop. 
+                                {/* I&#39;m currently working in the field and I still grasp any chance to develop. 
                                 I have experience with full-stack apps, hardware, networks, and software development. 
-                                As my career develops, I am thrilled to take on new challenges and learn more. 
+                                As my career develops, I am thrilled to take on new challenges and learn more.  */}
+
+                                Currently, I&#39;m focused on upskilling to become a full-stack engineer, and I&#39;m also starting to explore DevOps, so I can eventually take ownership of the entire development and deployment lifecycle. From backend logic to frontend polish and soon, pipelines and cloud infrastructure, I enjoy diving into all sides of software development.
+                                
+                            </motion.p>}
+
+                            <br />
+                            {myElementIsVisible && <motion.p className="text-white text-justify leading-8 3xl:indent-14 2xl:indent-14 xl:indent-10 md:indent-10 xs:indent-8 xxs:indent-6 3xl:text-xl 2xl:text-lg xl:text-lg md:text-lg xs:text-sm xxs:text-sm"
+                                initial={{ x: '-100vw' }}
+                                animate={{ x: 0 }}
+                                transition={{ duration: 1.5, delay: 0.7, ease: "easeInOut" }}
+                            >
+                                {/* Residing in Batangas City, Batangas, I am prepared to take on challenging software development projects.
+                                I am versatile, offering support in networks, a solid foundation in hardware, and full-stack capabilities in software. */}
+
+                                {/* I&#39;m currently working in the field and I still grasp any chance to develop. 
+                                I have experience with full-stack apps, hardware, networks, and software development. 
+                                As my career develops, I am thrilled to take on new challenges and learn more.  */}
+
+                                With a background that includes software, hardware, and networks, I bring a mix of analytical thinking and creative problem-solving to the table. I love building things, solving problems, and learning from every project I work on. Still early in my journey, but excited for what’s ahead.
                                 
                             </motion.p>}
                         </div>

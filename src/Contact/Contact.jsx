@@ -28,6 +28,10 @@ function Contact() {
                             <h3 className='text-white lowercase leading-8 '>
                                 jilbertvaquez02@gmail.com
                             </h3>
+                            <br />
+                            <h3 className='text-white lowercase leading-8 '>
+                                jilbertvaquez.dev@gmail.com
+                            </h3>
                         </div>
                         <div className=' flex justify-center items-center mx-auto 3xl:w-2/6 2xl:w-2/6 xl:w-2/6 md:w-4/6 xs:w-5/6 xxs:w-5/6 '>
                             <Animation animationData={laptop} />
@@ -53,11 +57,11 @@ const Accounts = [
         image: 'facebook.png',
         link: 'https://www.facebook.com/jilbert.vasquez/',
     },
-    {
-        socialmedia: 'linkedin',
-        image: 'linkedin.png',
-        link: 'https://www.linkedin.com/in/jilbert-vasquez-07894727a/',
-    },
+    // {
+    //     socialmedia: 'linkedin',
+    //     image: 'linkedin.png',
+    //     link: 'https://www.linkedin.com/in/jilbert-vasquez-07894727a/',
+    // },
     {
         socialmedia: 'gmail',
         image: 'gmail.png',
@@ -71,7 +75,7 @@ const Accounts = [
     {
         socialmedia: 'tiktok',
         image: 'tiktok.png',
-        link: 'https://www.tiktok.com/@jilbertvasquez',
+        link: 'https://www.tiktok.com/@jlbrtvsqz',
     },
 ];
 

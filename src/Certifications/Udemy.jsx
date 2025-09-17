@@ -13,12 +13,18 @@ import SQL_for_Developers_Data_Analysts_and_BI_MySQL_for_everyone from '/certs/U
 import Master_Course_in_Cloud_Computing_and_Cloud_Architecture_2v0 from '/certs/Udemy/Master_Course_in_Cloud_Computing_and_Cloud_Architecture_2v0.jpg';
 import Machine_Learning_Fundamental_of_Python_Machine_Learning from '/certs/Udemy/Machine_Learning_Fundamental_of_Python_Machine_Learning.jpg';
 import Web_Development_Masterclass_Online_Certification_Course from '/certs/Udemy/Web_Development_Masterclass_Online_Certification_Course.jpg';
+import Angular_The_Complete_Guide_2025_Edition from '/certs/Udemy/Angular_The_Complete_Guide_2025_Edition.jpg';
 
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
 function Udemy() {
     const udemyCert = [
+        {
+            name: "Angular: The Complete Guide (2025 Edition)",
+            image: Angular_The_Complete_Guide_2025_Edition,
+            link: "https://www.udemy.com/certificate/UC-26576e30-afe4-4faf-b6e2-ed9b33341ae4/",
+        },
         {
             name: "Python 3 Ultimate Guide",
             image: Python_3_Ultimate_Guide,

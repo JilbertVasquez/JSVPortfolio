@@ -1,6 +1,6 @@
 import { Typewriter, Cursor } from 'react-simple-typewriter';
 import '../custom.css';
-import jil1 from '../assets/jil1.jpg';
+import jil2 from '../assets/jil2.jpg';
 import NavHeader from '../Nav/NavHeader';
 
 import mycv from '../assets/Vasquez_Jilbert_S_Resume.pdf';
@@ -24,7 +24,7 @@ function Home() {
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0, ease: "easeInOut" }} className="flex justify-center items-center">
-                        <img className='my-pic  rounded-full w-4/5 border-2 border-sky-500 ' src={jil1} alt="jil-pic" />
+                        <img className='my-pic  rounded-full w-4/5 border-2 border-sky-500 ' src={jil2} alt="jil-pic" />
                     </motion.div>}
                 </div>
                 <div className='w-3/5 flex justify-start items-center 3xl:h-screen 2xl:h-screen xl:h-screen md:h-2/4 xs:h-2/4 xxs:h-2/4 3xl:px-20 2xl:px-20 xl:px-20 md:px-0 xs:px-0 xxs:px-0 3xl:w-3/5 2xl:w-3/5 xl:w-3/5 md:w-full xs:w-full xxs:w-full'>
@@ -45,7 +45,7 @@ function Home() {
                         <h1 className='custom_font_color_1 capitalize font-semibold tracking-wider pt-2 pb-1 3xl:text-3xl 2xl:text-3xl xl:text-2xl md:text-2xl xs:text-lg  xxs:text-lg'>
                             <Typewriter
                                 loop={true}
-                                words={['Computer Engineer', 'Web Developer', "Future Software Engineer"]}
+                                words={['Computer Engineer', 'Full-Stack Web Developer', "Aspiring Software Engineer"]}
                                 typeSpeed={250}
                                 delaySpeed={1500}
                             /><Cursor />
@@ -56,7 +56,7 @@ function Home() {
                             transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}>
                             <h1 className='text-white font-medium pt-1 pb-2 3xl:text-xl 2xl:text-xl xl:text-lg md:text-lg xs:text-sm xxs:text-xs'> &lt; Welcome-to-my-personal-website /&gt; </h1>
                         </motion.div>}
-                        <div className='pt-6'>
+                        {/* <div className='pt-6'>
                             {hello && <motion.div
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
@@ -65,7 +65,7 @@ function Home() {
                                     <button className='bg-sky-700 text-white px-4 py-2 rounded-lg'>Download CV</button>
                                 </a>
                             </motion.div>}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

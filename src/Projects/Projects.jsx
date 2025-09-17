@@ -6,6 +6,10 @@ import BatStateUCampusMap from '../assets/BatStateUCampusMap.png';
 import Vault from '../assets/Vault.png';
 import MuseumRevive from '../assets/MuseumRevive.png';
 import CelestialHotel from '../assets/CelestialHotel.png';
+import BudgetTrackerApp from '../assets/BudgetTrackerApp.png';
+import FoodNutritionApp from '../assets/FoodNutritionApp.png';
+import TodoApp from '../assets/TodoApp.png';
+import RQM from '../assets/RQM.png';
 
 import tributepage from '../assets/tributepage.png';
 import surveyform from '../assets/surveyform.png';
@@ -19,6 +23,27 @@ import { useInView } from 'react-intersection-observer';
 import '../custom.css';
 
 const projectDetails = [
+    {
+        image: BudgetTrackerApp,
+        title: 'Budget Tracker App',
+        description: `Developed a secure and user-friendly budgeting application that allows users to manage expenses and income with authenticated access and protected data flow.`,
+        languages: ['angular', 'asp net core', 'api', 'tailwind', 'auth0', 'jwt token', 'mysql', 'azure'],
+        link: 'https://budget-tracker-app.victoriousplant-30209041.southeastasia.azurecontainerapps.io/',
+    },
+    {
+        image: FoodNutritionApp,
+        title: 'Food Nutrition App',
+        description: `Built a visual food recognition tool that identifies food from uploaded images using the Imagga API and retrieves real-time nutritional data through the Nutritionix API.`,
+        languages: ['angular', 'api', 'tailwind'],
+        link: 'https://foodnutritionapp.netlify.app/',
+    },
+    {
+        image: TodoApp,
+        title: 'Todo App',
+        description: `Created a simple and intuitive task management system that helps users organize, track, and complete their daily activities efficiently.`,
+        languages: ['angular', 'asp net core', 'api', 'tailwind', 'jwt token', 'mysql'],
+        link: 'https://github.com/JilbertVasquez/todo-app',
+    },
     {
         image: Portfolio,
         title: 'Personal Website',
@@ -43,11 +68,11 @@ const projectDetails = [
         link: 'https://batstateu-tneu-alangilan-map.netlify.app/',
     },
     {
-        image: Vault,
-        title: 'Personal Vault System',
-        description: 'Developed an account manager in NetBeans Java, providing a secure platform for users to manage and store their accounts and passwords with MySQL integration.',
-        languages: ['Java', 'Netbeans', 'Mysql'],
-        link: 'https://jilbertvasquez.github.io/PersonalVaultUserManual/',
+        image: RQM,
+        title: 'Random Quote Machine',
+        description: 'Developed a responsive React web application for generating and sharing random quotes, featuring dynamic UI updates and seamless social media integration.',
+        languages: ['angular', 'tailwind', 'api'],
+        link: 'https://random-quote-machine-jsv.netlify.app/',
     },
     {
         image: MuseumRevive,
@@ -78,6 +103,13 @@ const projectDetails = [
 ];
 
 const projectDetails2 = [
+     {
+        image: Vault,
+        title: 'Personal Vault System',
+        description: 'Developed an account manager in NetBeans Java, providing a secure platform for users to manage and store their accounts and passwords with MySQL integration.',
+        languages: ['Java', 'Netbeans', 'Mysql'],
+        link: 'https://jilbertvasquez.github.io/PersonalVaultUserManual/',
+    },
     {
         image: tributepage,
         title: 'Tribute Page (2021)',
@@ -112,6 +144,73 @@ const projectDetails2 = [
         description: `Freecodecamp Responsive Web Design Project. Build your own personal portfolio page.`,
         languages: ['html', 'css'],
         link: 'https://codepen.io/JilbertVasquez/full/KKvKPxq',
+    },
+];
+
+const projectDetails3 = [
+    {
+        title: 'Inventory System',
+        description: `InventorySystem is a Java desktop application for efficient inventory management. 
+            It allows users to add, update, search, and track inventory items with a simple interface and MySQL database integration.`,
+        languages: ['Java', 'Mysql'],
+        link: 'https://github.com/JilbertVasquez/Inventory-System',
+    },
+    {
+        title: 'Monitoring System',
+        description: `MONITORING_SYSTEM is a Python desktop application designed for monitoring and managing system data. 
+            It provides an intuitive interface for tracking, analyzing, and visualizing system metrics, making it suitable for administrative and research purposes.`,
+        languages: ['python', 'excel', 'mysql'],
+        link: 'https://github.com/JilbertVasquez/MONITORING_SYSTEM',
+    },
+    {
+        title: 'AI APP',
+        description: `AI ROBOT APP is a Python desktop application that provides interactive Text-to-Speech and FAQ functionalities. 
+            Users can enter text to be spoken aloud, browse frequently asked questions, and enjoy a dynamic interface with integrated 
+            video and image assets.`,
+        languages: ['python', 'excel'],
+        link: 'https://github.com/JilbertVasquez/AI-APP',
+    },
+    {
+        title: 'Restaurant Ordering System',
+        description: `Restaurant Ordering System is a Python desktop application for efficient restaurant order management. 
+            Staff can select menu items, input quantities, calculate totals (including tax), process payments, generate receipts, 
+            and save orders—all through a modern, user-friendly interface.`,
+        languages: ['python', 'txt'],
+        link: 'https://github.com/JilbertVasquez/Restaurant-Ordering-System',
+    },
+    {
+        title: 'Student Enrollment System',
+        description: `JSV_LAB2 is a Java desktop application for student course enrollment and management. 
+            It provides an easy-to-use interface for entering student details, managing course information, 
+            and confirming applications through multiple interactive forms.`,
+        languages: ['java', 'mysql'],
+        link: 'https://github.com/JilbertVasquez/JSV_LAB2',
+    },
+    {
+        title: 'Payroll System',
+        description: `JSV_PPA is a Java desktop application for payroll management. 
+            It enables administrators and HR personnel to securely manage employee records, process payroll, 
+            and generate payslips through an intuitive graphical interface.`,
+        languages: ['java', 'mysql'],
+        link: 'https://github.com/JilbertVasquez/JSV_PPA',
+    },
+    {
+        title: 'ATM System',
+        description: `ATM_MACHINE is a Java desktop application that simulates the core functionalities of 
+            an Automated Teller Machine (ATM). It provides users with secure access to banking operations 
+            such as account management, balance inquiry, deposits, withdrawals, and administrative controls 
+            through an intuitive graphical interface.`,
+        languages: ['java', 'mysql'],
+        link: 'https://github.com/JilbertVasquez/ATM_MACHINE',
+    },
+    {
+        title: 'Enrollment System',
+        description: `Enrollment System Project is a Python desktop application for managing student enrollment 
+            at Allison International School. It provides secure login, registration, and a dashboard for students, 
+            along with features for viewing academic details, tuition, and club participation. The application uses 
+            a modern UI and connects to a MySQL database for persistent data storage.`,
+        languages: ['python', 'mysql'],
+        link: 'https://github.com/JilbertVasquez/Enrollment-System-Project',
     },
 ];
 
@@ -151,29 +250,56 @@ const backgroundColorBasedOnLanguage = (language) => {
             return '#5FB233';
         case 'python':
             return '#4584b6';
+        case 'angular':
+            return '#dd0031'; // Official Angular red
+        case 'asp net core':
+        case 'asp.net core':
+            return '#512bd4'; // Official .NET Core purple
+        case 'api':
+        case 'api integration':
+            return '#00bfa6'; // Neutral teal often used in API-related UIs
+        case 'auth0':
+            return '#eb5424'; // Auth0 official orange
+        case 'jwt':
+        case 'jwt token':
+            return '#000000'; // JWT typically uses black, can also be '#a91d22' or '#edb200' for stylized
+        case 'azure':
+            return '#007FFF';
+        case 'excel':
+            return '#217346';
         default:
-            return '#6B7280';
+            return '#6B7280'; // Default gray
+        // default:
+        //     return '#6B7280';
     }
 }
 
 
 function Projects() {
-
-    const [displayShow, setDisplayShow] = useState('show more');
     const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
+    const [showbutton2, setShowButton2] = useState(false);
 
-    const showMore1 = () => {
-        setShow1(!show1);
-    }
+    const toggleShow1 = () => {
+        const willShow = !show1;
+        setShow1(willShow);
 
-    const showDisplay = () => {
-        if (displayShow != 'show more') {
-            setDisplayShow('show more');
+        // If hiding Project 1, also hide Project 2
+        if (!willShow) {
+            setShow2(false);
+            setShowButton2(false);
         }
         else {
-            setDisplayShow('show less');
+            setShowButton2(true);
         }
-    }
+    };
+
+    const toggleShow2 = () => {
+        // Only allow toggling Project 2 if Project 1 is open
+        if (show1) {
+            setShow2(prev => !prev);
+        }
+    };
 
     const { ref: myRef1, inView: skills1 } = useInView({ triggerOnce: true });
 
@@ -198,14 +324,28 @@ function Projects() {
                         ))}
                     </div>}
                 </div>
+
                 <div className='w-full flex justify-center items-center p-5'>
-                    <button className='uppercase rounded-full px-3 p-2 custom_bg_1 text-white 3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs' onClick={() => { showDisplay(); showMore1(); }}>{displayShow}</button>
+                    <button className='uppercase rounded-full px-3 p-2 custom_bg_1 text-white 3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs' onClick={toggleShow1}>{show1 ? 'Show Less' : 'Show More'}</button>
                 </div>
                 <div className={` ${show1 ? "flex" : "hidden"} grid pt-6 pb-6 mt-10 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-x-14 2xl:gap-x-14 xl:gap-x-8 xs:gap-x-6 xxs:gap-x-6 3xl:px-14 2xl:px-14 xl:px-14 xs:px-0 xxs:px-0 3xl:gap-y-20 2xl:gap-y-20 xl:gap-y-20 xs:gap-y-8 xxs:gap-y-8`}>
                     {projectDetails2.map((project, index) => (
                         <EventCard key={index} image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
                     ))}
                 </div>
+
+                {showbutton2 && (
+                    <div className='w-full flex justify-center items-center p-5'>
+                        <button className='uppercase rounded-full px-3 p-2 custom_bg_1 text-white 3xl:text-base 2xl:text-sm xl:text-sm md:text-xs xs:text-xs xxs:text-xs' onClick={toggleShow2}>{show2 ? 'Show Less' : 'Show More'}</button>
+                    </div>
+                )}
+                {show2 && (
+                    <div className={` ${show2 ? "flex" : "hidden"} grid pt-6 pb-6 mt-10 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xxs:grid-cols-1 3xl:gap-x-14 2xl:gap-x-14 xl:gap-x-8 xs:gap-x-6 xxs:gap-x-6 3xl:px-14 2xl:px-14 xl:px-14 xs:px-0 xxs:px-0 3xl:gap-y-20 2xl:gap-y-20 xl:gap-y-20 xs:gap-y-8 xxs:gap-y-8`}>
+                        {projectDetails3.map((project, index) => (
+                            <EventCard key={index} image={project.image} title={project.title} description={project.description} languages={project.languages} link={project.link} />
+                        ))}
+                    </div>
+                )}
             </section>
         </section>
     )
@@ -218,7 +358,9 @@ const EventCard = ({ image, title, description, languages, link }) => {
     return (
         <div className='event_shadow w-full h-full min_height_project rounded-xl border-2 border-sky-500 p-4 px-6 hover:bg-gray-950 '>
             <div className='w-full 3xl:h-2/6 2xl:3/6 xl:3/6'>
-                <img className='w-full h-full rounded object-cover  ' src={image} alt="tumbnail" />
+                {image &&
+                    <img className='w-full h-full rounded object-cover  ' src={image} alt="tumbnail" />
+                }
             </div>
             <div className='w-full'>
                 <h1 className='custom_font_color_1 tracking-wide pt-2 flex justify-center text-center capitalize font-medium 
@@ -260,7 +402,7 @@ const EventCard = ({ image, title, description, languages, link }) => {
 }
 
 EventCard.propTypes = {
-    image: PropTypes.string.isRequired,
+    image: PropTypes.string,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     languages: PropTypes.arrayOf(PropTypes.string).isRequired,
