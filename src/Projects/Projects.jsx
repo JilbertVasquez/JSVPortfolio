@@ -10,6 +10,7 @@ import BudgetTrackerApp from '../assets/BudgetTrackerApp.png';
 import FoodNutritionApp from '../assets/FoodNutritionApp.png';
 import TodoApp from '../assets/TodoApp.png';
 import RQM from '../assets/RQM.png';
+import Ticketing from '../assets/Ticketing.png';
 
 import tributepage from '../assets/tributepage.png';
 import surveyform from '../assets/surveyform.png';
@@ -23,6 +24,13 @@ import { useInView } from 'react-intersection-observer';
 import '../custom.css';
 
 const projectDetails = [
+    {
+        image: Ticketing,
+        title: 'Ticketing System',
+        description: `Created a simple project ticketing system to practice specifically the SignalR library for real-time connections.`,
+        languages: ['angular', 'asp net core', 'tailwind'],
+        link: 'https://github.com/JilbertVasquez/Ticketing-System',
+    },
     {
         image: BudgetTrackerApp,
         title: 'Budget Tracker App',
@@ -44,15 +52,15 @@ const projectDetails = [
         languages: ['angular', 'asp net core', 'api', 'tailwind', 'jwt token', 'mysql'],
         link: 'https://github.com/JilbertVasquez/todo-app',
     },
-    {
-        image: Portfolio,
-        title: 'Personal Website',
-        description: `This personal website is designed to compile and highlight my skills, experience, projects, 
-                        certificates, and social media platform accounts. It uses modern web development technologies to ensure a 
-                        responsive and appealing interface. It allows me to connect with like-minded professionals and potential collaborators.`,
-        languages: ['html', 'css', 'javascript', 'React', 'Tailwind'],
-        link: '#Home',
-    },
+    // {
+    //     image: Portfolio,
+    //     title: 'Personal Website',
+    //     description: `This personal website is designed to compile and highlight my skills, experience, projects, 
+    //                     certificates, and social media platform accounts. It uses modern web development technologies to ensure a 
+    //                     responsive and appealing interface. It allows me to connect with like-minded professionals and potential collaborators.`,
+    //     languages: ['html', 'css', 'javascript', 'React', 'Tailwind'],
+    //     link: '#Home',
+    // },
     {
         image: DFSLogin,
         title: 'BatStateU - Alangilan Drive with Distributed File System',
