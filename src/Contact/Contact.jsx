@@ -1,14 +1,12 @@
-import React from 'react';
+import Animation from '../Design/Animation.jsx';
+import laptop from '../../public/laptop.json';
 
-import Animation from './Animation.jsx';
-import laptop from '../public/laptop.json';
-
-import './custom.css';
+import '../custom.css';
 
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
-function Contact () {
+function Contact() {
 
     return (
         <section className=" custom_bg_1 3xl h-full flex flex-col items-center" id='Contact'>
@@ -24,11 +22,15 @@ function Contact () {
                                 bs cpe
                             </h3>
                             <h3 className='text-white capitalize leading-8'>
-                                Batangas City, Batangas 
+                                Batangas City, Batangas
                             </h3>
                             <br />
                             <h3 className='text-white lowercase leading-8 '>
                                 jilbertvaquez02@gmail.com
+                            </h3>
+                            <br />
+                            <h3 className='text-white lowercase leading-8 '>
+                                jilbertvaquez.dev@gmail.com
                             </h3>
                         </div>
                         <div className=' flex justify-center items-center mx-auto 3xl:w-2/6 2xl:w-2/6 xl:w-2/6 md:w-4/6 xs:w-5/6 xxs:w-5/6 '>
@@ -55,11 +57,11 @@ const Accounts = [
         image: 'facebook.png',
         link: 'https://www.facebook.com/jilbert.vasquez/',
     },
-    {
-        socialmedia: 'linkedin',
-        image: 'linkedin.png',
-        link: 'https://www.linkedin.com/in/jilbert-vasquez-07894727a/',
-    },
+    // {
+    //     socialmedia: 'linkedin',
+    //     image: 'linkedin.png',
+    //     link: 'https://www.linkedin.com/in/jilbert-vasquez-07894727a/',
+    // },
     {
         socialmedia: 'gmail',
         image: 'gmail.png',
@@ -73,31 +75,25 @@ const Accounts = [
     {
         socialmedia: 'tiktok',
         image: 'tiktok.png',
-        link: 'https://www.tiktok.com/@jilbertvasquez',
+        link: 'https://www.tiktok.com/@jlbrtvsqz',
     },
 ];
 
 const SocialMedia = () => {
 
-    const {ref: myRef1, inView: socMed} = useInView({ triggerOnce: true });
+    const { ref: myRef1, inView: socMed } = useInView({ triggerOnce: true });
 
     return (
         <div ref={myRef1} className='w-full h-full bg-white '>
-            {/* {Accounts.map((socmed, index) => (
-                <div className='rounded-full h-2/4' key={index}>
-                    <a className='h-full w-full' href={socmed.link} target="_blank" rel="noopener noreferrer">
-                        <img className='w-full h-full socmed' src={socmed.image} alt={socmed.socialmedia} />
-                    </a>
-                </div>
-            ))} */}
+
             {socMed && <div className='w-full h-full flex justify-center items-center gap-x-10 overflow-hidden'>
                 {Accounts.map((socmed, index) => (
                     <motion.div
-                    initial={{y: index % 2 == 0 ? '-200%' : '200%' }}
-                    animate={{y: '0'}}
-                    transition={{duration: 1, delay: index * 0.5, ease: "easeInOut"}}
-                    className='rounded-full h-2/4' 
-                    key={index}
+                        initial={{ y: index % 2 == 0 ? '-200%' : '200%' }}
+                        animate={{ y: '0' }}
+                        transition={{ duration: 1, delay: index * 0.5, ease: "easeInOut" }}
+                        className='rounded-full h-2/4'
+                        key={index}
                     >
                         <a className='h-full w-full' href={socmed.link} target="_blank" rel="noopener noreferrer">
                             <img className='w-full h-full socmed' src={socmed.image} alt={socmed.socialmedia} />
